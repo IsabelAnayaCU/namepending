@@ -88,12 +88,11 @@ p:hover, p:active{
     width: 50%; 
 }
 
-/*bottom of page*/
-.icons, .github_icon{
-    position: relative; 
-    width: 50%; 
-    bottom: 10px;
-}
+.topleft {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }  
 
 .input_box{
     text-align: center;
