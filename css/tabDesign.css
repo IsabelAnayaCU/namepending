@@ -1,16 +1,13 @@
 
 /*FULL WEB CSS FORMATTING*/
 
-
 html, head, body{
-    margin: 0 auto; 
+    margin: 0; 
     align-content: center;
     position: relative; 
 
     font-family: "Carrois Gothic"; 
     font-variant-caps: all-small-caps;
-
-    background-color: #3a4663; 
 }
 
 /*HEADER TYPES*/
