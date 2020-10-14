@@ -1,14 +1,2 @@
 
 /* MAP TAB CSS FORMATTING*/
-
-body{
-    margin: 0; 
-    padding: 0; 
-}
-
-#map{
-    position: aboslute; 
-    top: 0; 
-    bottom: 0; 
-    width: 100%; 
-}
