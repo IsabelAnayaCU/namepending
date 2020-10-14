@@ -13,7 +13,7 @@ mapboxgl.accessToken = '<pk.eyJ1IjoicG91cm5hcyIsImEiOiJja2c5ZGl0MnEwNzh4MnRwNW84
         //[longitude, latitude]
         center: [-105.2656199, 40.0049445], 
         //starting zoom into map 
-        zoom: 14 // starting zoom
+        zoom: 15 // starting zoom
     });
 
     var layerList = document.getElementById('menu');
