@@ -2,11 +2,28 @@
 
 /*https://account.mapbox.com: make the map appear using access token from account */
 
-/*mapboxgl.accessToken = '<sk.eyJ1IjoicG91cm5hcyIsImEiOiJja2c5ZHE4aDQwcTBwMnJtdTBiMjcyb2gyIn0.MPNsbHaLvewsgwIkz9lKtQ>'; 
+mapboxgl.accessToken = '<pk.eyJ1IjoicG91cm5hcyIsImEiOiJja2c5ZGl0MnEwNzh4MnRwNW84aWRlMzA2In0.igXHhRH5VJlv4lTfOqii6g>';
 
-var map = new mapboxgl.Map({
-    container: 'map', // container id
-    style: 'mapbox://styles/mapbox/streets-v11', // style URL
-    center: [-74.5, 40], // starting position [lng, lat]
-    zoom: 9 // starting zoom
-});*/
+//DISPLAY CU BOULDER CAMPUS MAP 
+    var map = new mapboxgl.Map({
+        //container id
+        container: 'map', 
+        //URL
+        style: 'mapbox://styles/mapbox/map_style',
+        //[longitude, latitude]
+        center: [-105.2656199, 40.0049445], 
+        //starting zoom into map 
+        zoom: 14 // starting zoom
+    });
+
+    var layerList = document.getElementById('menu');
+    var inputs = layerList.getElementsByTagName('input');
+     
+    function switchLayer(layer) {
+    var layerId = layer.target.id;
+    map.setStyle('mapbox://styles/mapbox/' + layerId);
+    }
+     
+    for (var i = 0; i < inputs.length; i++) {
+        inputs[i].onclick = switchLayer;
+    }

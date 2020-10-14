@@ -13,7 +13,10 @@ body{
     width: 100%; 
 }
 
-.mapbox_popup{
-    max-width: 400px;
-    font: 12px/20px 'Carrois Gothic'; 
+#menu{
+    position: absolute; 
+    paddng: 10px; 
+    font: 'Carrois Gothic'; 
+
+    background-color: #3a4663; 
 }

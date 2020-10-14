@@ -38,15 +38,25 @@
     <body>
         <!--MAP DIV-->
         <div id="map"></div> 
-        <script> 
-            mapboxgl.accessToken = '<pk.eyJ1IjoicG91cm5hcyIsImEiOiJja2c5ZGl0MnEwNzh4MnRwNW84aWRlMzA2In0.igXHhRH5VJlv4lTfOqii6g>'; 
-                var map = new mapboxgl.Map({
-                    container: 'map', // container id
-                    style: 'mapbox://styles/mapbox/streets-v11', // style URL
-                    center: [40, -105], // starting position [lng, lat]
-                    zoom: 9 // starting zoom
-});
-        </script> 
+        <div id="menu">
+            <input 
+                id="map_style"
+                type="radio"
+                name="styletoggle"
+                value="streets"
+                check="checked"
+            />
+            
+            <label for="map_style">streets</label>
+            <input id="map_light" type="radio" name="styletoggle" value="light" />
+            <label for="map_light">light</label>
+            <input id="map_dark" type="radio" name="styletoggle" value="dark" />
+            <label for="map_dark">dark</label>
+            <input id="map_outdoor" type="radio" name="styletoggle" value="outdoors" />
+            <label for="map_outdoor">outdoors</label>
+            <input id="map_satellite" type="radio" name="styletoggle" value="satellite" />
+            <label for="map_satellite">satellite</label>
+        </div>
         
 
         <!--GITHUB ICON: ONCLICK TO REPO LINK (INCLUDED ON EVERY TAB)-->
