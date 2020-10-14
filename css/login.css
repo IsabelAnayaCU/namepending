@@ -1,0 +1,15 @@
+
+/*LOGIN TAB CSS FORMATTING*/
+
+/* TYPES */
+#form_content{
+    background-color: #c9af98;
+    margin: 0 auto;
+    padding: 25px 0 0;
+    position: relative;
+    text-align: center;
+    width: 400px;
+}
+
+#user_name { background-position: 10px 10px !important }
+#pass_word { background-position: 10px -53px !important }

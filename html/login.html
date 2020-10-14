@@ -1,0 +1,107 @@
+
+
+<!--LOGIN TAB HTML PAGE-->
+
+<!DOCTYPE html>
+
+<html lang="en"> 
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width= device-width, initial scale=1, shrink-to-fit=no">
+        
+        <!--LOGIN-->
+        <title> log-in  </title>
+        
+         <!--CSS STYLE SHEET: BOOTSTRAP IMPLEMENTATION-->
+         <link rel="stylesheet" type="text/xml" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"/>
+        
+         <!--CSS STYLE SHEET: TABDESIGN.CSS-->
+         <link type="text/css" href="https://covid19safetyapp,github.io/css/tabDesign.css" rel="stylesheet"/>
+
+         <!--CSS STYLE SHEET: LOGIN.CSS-->
+         <link type="text/css" href="https:/covid19safetyapp.github.io/css/login.css" rel="stylesheet"/> 
+
+         <!--FONT IMPLEMENTATION: Carrois Gothic-->
+         <link href='https://fonts.googleapis.com/css?family=Carrois Gothic' rel='stylesheet'/>
+
+         <!--IMAGE LINKS-->
+         <link rel="profile_icon" type="image" src="https://covid19safetyapp.github.io/images/profile_icon.png">
+         <link rel="github_icon" type="image" src="https://covid19safetyapp.github.io/images/github.png">
+         
+    </head>
+
+    <body> 
+        <div class="container">
+            <section id="form_content">
+
+                 <!--PROFILE IMAGE-->
+                 <div class="images">
+                    <img src="https://covid19safetyapp.github.io/images/profile_icon.png" alt="Avatar" class="avatar" style="width: 90px; height: 90px;">
+                </div>
+
+                <!--HEADER-->
+                <h1> log-in</h1>
+
+                <form name="login_form" action="login.php" onsubmit="return validateLogin()" method="post"> 
+
+                    <!--USERNAME & PASSWORD-->
+                        <!--USERNAME DIV-->
+                        <div>
+                            <!--USERNAME-->
+                            <label for="user_name"> 
+                                <h3>username</h3>   
+                                <!--USER INPUT-->
+                                <input class="input_box" type="text" placeholder="enter username" id="user_name" required=""/>                               
+                            </label>
+                        </div> 
+
+                        <!--PASSWORD DIV-->
+                        <div style="text-align: center;">
+                            <!--PASSWORD-->
+                            <label for="pass_word"> 
+                                <h3>password</h3>
+                            </label>
+
+                            <!--PASSWORD INPUT-->
+                            <input class="input_box" type="password" placeholder="enter password" id="pass_word" required="" />
+                        </div>
+
+                        <!--REMEMBER ME CHECKBOX DIV-->
+                        <div>
+                            <label>
+                                <h4>
+                                    remember me
+                                    <input type="checkbox" checked="checked" name="remember_me" />
+                                </h4>
+                            </label> 
+                        </div>
+
+                        <!--LOGIN BUTTON, FORGOT PASSWORD, CREATE NEW ACCOUNT DIV-->
+                        <div>
+                            <input class="buttons" type="submit" value="log-in" />
+                            
+
+                            <p> 
+                                <a href="#" style="text-align: left;"> forgot password?</a>
+                                <a href='#' style="text-align: right;"> create new account </a>
+                            </p>    
+
+                            <!--GITHUB ICON: ONCLICK TO REPO LINK (INCLUDED ON EVERY TAB)-->
+                            <img class="images github_icon" id="github" src="https://covid19safetyapp.github.io/images/github.png" style="width: 35px; height: 35px;"  onclick="window.location.href='https://github.com/pournasengupta/covid19webapp.git'"/>
+                        
+                            <br>
+
+                        </div>
+                </form>
+            </section>
+        </div>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <script src="https://covid19safetyapp.github.io/js/tabDesign.js"></script> <!--FULL APP JS-->
+        <script src="https://covid19safetyapp.github.io/js/login.js"> </script> <!-- INDIVIDUAL TAB JS-->
+    </body>
+</html>

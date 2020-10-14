@@ -1,0 +1,138 @@
+
+/*FULL WEB CSS FORMATTING*/
+
+
+html, head, body{
+    margin: 0 auto; 
+    align-content: center;
+    position: relative; 
+
+    font-family: "Carrois Gothic"; 
+    font-variant-caps: all-small-caps;
+
+    background-color: #3a4663; 
+}
+
+/*HEADER TYPES*/
+h1{
+    font: "Carrois Gothic"; 
+    font-variant-caps: all-small-caps; 
+    font-size: 40px; 
+    color: white;  
+
+    color: white;
+    background-color: #3a4663; 
+}
+
+h2{
+    font: "Carrois Gothic"; 
+    font-variant-caps: all-small-caps; 
+    font-size: 35px; 
+    color: white;  
+
+    color: white;
+    background-color: #3a4663; 
+}
+
+h3{
+    text-align: center; 
+
+    font: "Carrois Gothic"; 
+    font-variant-caps: all-small-caps; 
+    font-size: 30px; 
+    color: white; 
+    
+    background-color: #3a4663; 
+}
+
+h4{
+    text-align: center; 
+
+    font: "Carrois Gothic"; 
+    font-variant-caps: all-small-caps; 
+    font-size: 25px; 
+    color: white; 
+    
+    background-color: #3a4663; 
+}
+
+p{
+    text-align: center; 
+
+    font: "Carrois Gothic"; 
+    font-variant-caps: all-small-caps; 
+    font-size: 20px; 
+    color: white; 
+    
+    background-color: #3a4663; 
+}
+
+p:visited{
+    color: #ed8a63; 
+}
+
+p:hover, p:active{
+    color: #00a0a0; 
+}
+
+/*COMMON CLASSES*/
+.container{
+    margin: 0px auto; 
+    position: relative; 
+    width: 900px; 
+    
+    background-color: #3a4663; 
+}
+
+.images{
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 50%; 
+}
+
+/*bottom of page*/
+icons, .github_icon{
+    position: relative; 
+    width: 50%; 
+    bottom: 10px;
+}
+
+.input_box{
+    text-align: center;
+    display: inline; 
+    height: 50px; 
+    width: 150px;  
+
+    font: "Carrois Gothic"; 
+    font-variant-caps: all-small-caps; 
+    font-size: 20px; 
+    font-style: italic; 
+    color: white; 
+    
+    background-color: #101357;
+    border-color: white;
+    border-style: double; 
+    border-width: 3px;
+}
+
+.buttons{
+    text-align: center; 
+    display: inline; 
+    height: 50px; 
+    width: 150px; 
+
+    font: "Carrois Gothic"; 
+    font-variant-caps: all-small-caps; 
+    font-size: 25px; 
+    font-weight: bold; 
+    color: white; 
+
+    background-color: #845007;
+    border-color: white; 
+    border-style: double;
+    border-width: 3px;
+    
+}
+
+

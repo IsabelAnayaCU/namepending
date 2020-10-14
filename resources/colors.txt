@@ -1,0 +1,75 @@
+//TEXT FILE CONTAINING COLORS THAT WE MAY POTENTIALLY USE AND THE LIST OF COLORS BEING USED FOR WHICH TYPES OF OBJECTS
+
+
+Ragin Beige: #fff5d7
+
+Coral Pink: #ff5e6c
+
+Sleuthe Yellow: #feb300
+
+Pink Leaf: #ffaaab
+
+Yellow Green: #9ACD32
+
+Forest Green: #228B22
+
+Green Treeline: #478559
+
+Purple baseline: #161748
+
+Pink highlight: #f95d9b
+
+Bluewater lowlight: #39a0ca
+
+Mountain Shadow Blue: #101357
+
+Old Makeup Pink: #fea49f
+
+Goldenrod Yellow: #fbaf08
+
+Bluebell Light Blue: #00a0a0
+
+Bold 2019 Green: #007f4f
+
+Purple Shadow: #091f36
+
+Grey Blue Leaf: #4f5f76
+
+French Laundry Blue: #3a4660
+
+Comfortably Tan: #c9af98
+
+Peachy Kreme: #ed8a63
+
+Brown Bonnet: #845007
+
+
+//for html, head, body
+background-color: #3a4663 //french laundry blue 
+
+//for form content
+background-color:  #c9af98  //comfortably tan 
+
+
+//H2, H3, H4 (Headings)
+color: white
+background-color: #3a4663   //french laundry blue 
+
+
+//P (Text/Links)
+color: white
+background-color: #3a4663   //french laundry blue, reduced opacity 
+color: #ed8a63  //Peach Kreme for visited links
+color: #00a0a0  //Bluebell Light Blue for selected and hovered links
+
+
+//Input Boxes 
+color: white 
+background-color: #101357   //Mountain Shadow Blue 
+border-color: white 
+
+
+//Buttons 
+background-color: #845007 //Brown Bonnett  
+border-color: white   
+color: white
