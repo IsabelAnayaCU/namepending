@@ -6,14 +6,10 @@ mapboxgl.accessToken = '<pk.eyJ1IjoicG91cm5hcyIsImEiOiJja2c5ZGl0MnEwNzh4MnRwNW84
 
 //DISPLAY CU BOULDER CAMPUS MAP 
     var map = new mapboxgl.Map({
-        //container id
-        container: 'map', 
-        //URL
+        container: 'map',
         style: 'mapbox://styles/mapbox/streets-v11',
-        //[longitude, latitude]
-        center: [-105.2656199, 40.0049445], 
-        //starting zoom into map 
-        zoom: 15 // starting zoom
+        zoom: 15,
+        center: [-105.2656199, 40.0049445] 
     });
 
     var layerList = document.getElementById('menu');
@@ -27,3 +23,4 @@ mapboxgl.accessToken = '<pk.eyJ1IjoicG91cm5hcyIsImEiOiJja2c5ZGl0MnEwNzh4MnRwNW84
     for (var i = 0; i < inputs.length; i++) {
         inputs[i].onclick = switchLayer;
     }
+

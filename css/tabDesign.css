@@ -8,6 +8,8 @@ html, head, body{
 
     font-family: "Carrois Gothic"; 
     font-variant-caps: all-small-caps;
+
+    background-color: #3a4663; 
 }
 
 /*HEADER TYPES*/
@@ -17,7 +19,6 @@ h1{
     font-size: 40px; 
     color: white;  
 
-    color: white;
     background-color: #3a466381; 
 }
 
@@ -27,7 +28,6 @@ h2{
     font-size: 35px; 
     color: white;  
 
-    color: white;
     background-color: #c9af98; 
 }
 
