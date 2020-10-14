@@ -12,12 +12,3 @@ body{
     bottom: 0; 
     width: 100%; 
 }
-
-#menu{
-    position: absolute; 
-    padding: 10px; 
-    
-    font: 'Carrois Gothic'; 
-
-    background-color: #3a4663; 
-}
