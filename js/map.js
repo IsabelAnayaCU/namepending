@@ -9,7 +9,7 @@ mapboxgl.accessToken = '<pk.eyJ1IjoicG91cm5hcyIsImEiOiJja2c5ZGl0MnEwNzh4MnRwNW84
         //container id
         container: 'map', 
         //URL
-        style: 'mapbox://styles/mapbox/map_style',
+        style: 'mapbox://styles/mapbox/streets-v11',
         //[longitude, latitude]
         center: [-105.2656199, 40.0049445], 
         //starting zoom into map 
