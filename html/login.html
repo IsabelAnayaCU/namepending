@@ -1,5 +1,5 @@
 
-<!--USER LOGIN PAGE-->
+<!--USER LOGIN PAGE HTML-->
 
 <!DOCTYPE html> 
 <html lang="en"> 
@@ -7,6 +7,7 @@
     <head> 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="" />
 
         <title> log-in </title>
@@ -16,6 +17,7 @@
     
         <!--LINK BOOTSTRAP CORE CSS-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <!--INLINE STYLE-->
         <style> 
@@ -53,6 +55,8 @@
 
             <!--LOG IN HEADER-->
             <h1> log-in </h1>
+
+            <form name="login_validation" action="login.php" onsubmit="return validateLogin()" method="post"> 
 
             <!--USERNAME-->
             <label for="uname-input"> 
@@ -103,14 +107,122 @@
 
             <!--LINK: LINKS TO CREATE AN ACCOUNT PAGE-->
             <a class="btn btn-lg btn-primary"
-                href="https://covidsafetyapp.github.io/webapp/html/createAcc.html">
+                href="#createAccModal" 
+                class="btn btn-info" 
+                data-toggle="modal"
+                onclick="openModal()"
+                >
                 create an account
             </a>
         </form>
 
+        <!--CREATE ACCOUNT MODAL-->
+        <div id="createAcc" class="modal fade"> 
+            <div class="modal-dialog modal-login">
+                <div class="modal-content"> 
+                    <!--MODAL HEADER-->
+                    <div class="modal-header">
+                        <!--MODAL AVATAR-->
+                        <div class="avatar">
+                            <img src="https://covidsafetyapp.github.io/webapp/icons/profile_icon.png" alt="avatar">
+                        </div>
+
+                        <!--MODAL TITLE-->
+                        <h4 class="modal-title"> 
+                            create an account 
+                        </h4>
+
+                        <!--(X): CLOSE BUTTON-->
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+                    </div> 
+
+                    <div class="modal-body">
+
+                        <!--USER INPUT: FIRST NAME-->
+                        <div class="form-group"> 
+                            <input type="text"
+                                    class="form-control"
+                                    name="firstName"
+                                    placeholder="first name"
+                                    required="required"> 
+                        </div>
+
+                        <!--USER INPUT: LAST NAME-->    
+                        <div class="form-group"> 
+                            <input type="text" 
+                                    class="form-control" 
+                                    name="lastName" 
+                                    placeholder="last name"
+                                    required="required">
+                        </div>  
+                        
+                        <!--USER INPUT: PASSWORD-->    
+                        <div class="form-group"> 
+                            <input id="psw"
+                                    type="password" 
+                                    class="form-control" 
+                                    name="password" 
+                                    placeholder="password"
+                                    required="required">
+                        </div> 
+                        
+                        <!--USER INPUT: CONFIRM PASSWORD-->    
+                        <div class="form-group"> 
+                            <input id="cpsw"
+                                    type="password" 
+                                    class="form-control" 
+                                    name="confirm password" 
+                                    placeholder="confirm password"
+                                    required="required">
+                        </div>
+                        
+                        <!--BUTTON: SUBMIT-->
+                        <div class="form-group"> 
+                            <button id="submit_button" class="btn btn-primary btn-block login-btn" disabled
+                                    onClick="onClickFunction()"> sign up </button>
+                        </div>
+                    </div>
+                    <div class="modal-footer"> 
+                        <!--USER ALERT: PASSWORD REQUIREMENTS-->
+                        <div id="message" style="display: block">
+                            <h3> password requirements: </h3>
+                            <!--lowercase letter-->
+                            <p id="letter" class="invalid"> 
+                                a 
+                                <b>lowercase</b>
+                                letter
+                            </p>
+                            <!--capital letter-->
+                            <p id="capital" class="invalid"> 
+                                a 
+                                <b>capital(uppercase)</b>
+                                letter
+                            </p>
+                            <!--number-->
+                            <p id="number" class="invalid"> 
+                                a 
+                                <b>number</b>
+                            </p>
+                            <!--8 characters-->
+                            <p id="length" class="invalid"> 
+                                minimum
+                                <b>8 characters</b>
+                            </p>
+                            <!--Password & Confirm Password Match-->
+                            <p id="match" class="invalid"> 
+                                password and confirm password match 
+                            </p>
+                        </div>
+                </div>
+            </div>
+        </div>
+	</div>
+
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-
+        <script src="https://covidsafetyapp.github.io/webapp/js/app_style.js" ></script>
+   
     </body> 
 </html>
