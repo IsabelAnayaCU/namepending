@@ -11,16 +11,3 @@ mapboxgl.accessToken = '<pk.eyJ1IjoicG91cm5hcyIsImEiOiJja2c5ZGl0MnEwNzh4MnRwNW84
         zoom: 15,
         center: [-105.2656199, 40.0049445] 
     });
-
-    var layerList = document.getElementById('menu');
-    var inputs = layerList.getElementsByTagName('input');
-     
-    function switchLayer(layer) {
-    var layerId = layer.target.id;
-    map.setStyle('mapbox://styles/mapbox/' + layerId);
-    }
-     
-    for (var i = 0; i < inputs.length; i++) {
-        inputs[i].onclick = switchLayer;
-    }
-
