@@ -2,7 +2,7 @@
 
 /*https://account.mapbox.com: make the map appear using access token from account */
 
-mapboxgl.accessToken = '<pk.eyJ1IjoicG91cm5hcyIsImEiOiJja2c5ZGl0MnEwNzh4MnRwNW84aWRlMzA2In0.igXHhRH5VJlv4lTfOqii6g>';
+mapboxgl.accessToken = '<pk.eyJ1IjoicG91cm5hcyIsImEiOiJja2c5ZzY1eTAwbDUxMzJwZjF0ODYxdDBmIn0.gJv5bZ9pm7EL6lgw5vZLfg>';
 
 //DISPLAY CU BOULDER CAMPUS MAP 
     var map = new mapboxgl.Map({
