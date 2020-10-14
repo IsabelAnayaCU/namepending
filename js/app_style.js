@@ -1,6 +1,7 @@
 
 /* APPLICATION PAGES JS */
 
+
 /*Form validation for login.html*/
 function validateLogin() {
     var uname = document.forms["login_validation"]["uname-input"].value; 
@@ -74,7 +75,22 @@ function openModal() {
             length.classList.add("invalid");
         }
 
+        // Validate password and confirm password are the same
+        if(myInput == confirmMyInput) {
+            match.classList.remove("invalid");
+            match.classList.add("valid");
+        } else {
+            match.classList.remove("valid");
+            match.classList.add("invalid");
+        }
+
     }
+
+
+    var result = string1.localeCompare(string2);
+
+    document.getElementById("test").innerHTML = result;
+
 
     confirmMyInput.onkeyup = function() {
                 // Validate password and confirmPassword
