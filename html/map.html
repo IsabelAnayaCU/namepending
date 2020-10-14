@@ -38,7 +38,15 @@
     <body>
         <!--MAP DIV-->
         <div id="map"></div> 
-        
+        <script> 
+            mapboxgl.accessToken = '<pk.eyJ1IjoicG91cm5hcyIsImEiOiJja2c5ZGl0MnEwNzh4MnRwNW84aWRlMzA2In0.igXHhRH5VJlv4lTfOqii6g>'; 
+                var map = new mapboxgl.Map({
+                    container: 'map', // container id
+                    style: 'mapbox://styles/mapbox/streets-v11', // style URL
+                    center: [40, -105], // starting position [lng, lat]
+                    zoom: 9 // starting zoom
+});
+        </script> 
         
 
         <!--GITHUB ICON: ONCLICK TO REPO LINK (INCLUDED ON EVERY TAB)-->
