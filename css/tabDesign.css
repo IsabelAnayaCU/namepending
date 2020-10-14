@@ -150,7 +150,28 @@ p:hover, p:active{
     background-color: #c9af98; 
 }
 
+.footer-navbar{
+    width: 90px; 
+    background-color: #3a4663;
+}
+
+.footer-navbar a{
+    display: block; 
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease; 
+    color: white; 
+    font-size: 36px; 
+    margin-top: 20px;
+}
+
+.footer-navbar a:hover{
+    background-color: #c9af98
+}
+
 .active{
     background-color: #ed8a63; 
 }
+
+
 
