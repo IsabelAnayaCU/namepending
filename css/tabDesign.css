@@ -62,17 +62,17 @@ p{
     font: "Carrois Gothic"; 
     font-variant-caps: all-small-caps; 
     font-size: 20px; 
-    color: white; 
+    color: black; 
     
-    background-color: #3a4663; 
+    background-color: #c9af98; 
 }
 
 p:visited{
-    color: #ed8a63; 
+    color: #845007; 
 }
 
 p:hover, p:active{
-    color: #00a0a0; 
+    color: #161748; 
 }
 
 /*COMMON CLASSES*/

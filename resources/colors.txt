@@ -53,7 +53,7 @@ background-color:  #c9af98  //comfortably tan
 
 //H2, H3, H4 (Headings)
 color: white
-background-color: #3a4663   //french laundry blue 
+background-color: #c9af98   //comfortably tan
 
 
 //P (Text/Links)

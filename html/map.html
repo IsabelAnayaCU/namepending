@@ -1,13 +1,15 @@
 
 <!--INTERACTIVE MAP TAB HTML PAGE-->
+
+<!--Used tutorial from https://docs.mapbox.com/mapbox-gl-js/example/popup-on-hover/ to create interactive map with popups-->
 <!DOCTYPE html> 
 
 <!--HEADERS TO INCLUDE IN EVERY HTML FILE-->
 <html lang="en"> 
 
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width= device-width, initial scale=1, shrink-to-fit=no">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="initial scale=1, maximum-scale=1, user-scalable=no" />
 
         <!--interactive campus map-->
         <title> interactive CU map </title>
@@ -15,11 +17,15 @@
         <!--CSS STYLE SHEET: BOOTSTRAP IMPLEMENTATION-->
         <link rel="stylesheet" type="text/xml" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"/>
         
-         <!--CSS STYLE SHEET: TABDESIGN.CSS-->
-         <link type="text/css" href="https://covidsafetyapp.github.io/webapp/css/tabDesign.css" rel="stylesheet"/>
+        <!--CSS STYLE SHEET: TABDESIGN.CSS-->
+        <link type="text/css" href="https://covidsafetyapp.github.io/webapp/css/tabDesign.css" rel="stylesheet"/>
 
-         <!--CSS STYLE SHEET: 'TABNAME'.CSS-->
-             <link type="text/css" href="https://covidsafetyapp.github.io/webapp/css/map.css" rel="stylesheet"/> 
+        <!--CSS STYLE SHEET: MAP.CSS-->
+        <link type="text/css" href="https://covidsafetyapp.github.io/webapp/css/map.css" rel="stylesheet"/> 
+        
+        <!--MAPBOX GL: JS AND CSS IMPLEMENTATION-->
+        <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+        <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
 
          <!--FONT IMPLEMENTATION: CARROIS GOTHIC-->
          <link href='https://fonts.googleapis.com/css?family=Carrois Gothic' rel='stylesheet'/>
@@ -30,6 +36,11 @@
     </head> 
 
     <body>
+        <!--MAP DIV-->
+        <div id="map"></div> 
+        
+        
+
         <!--GITHUB ICON: ONCLICK TO REPO LINK (INCLUDED ON EVERY TAB)-->
         <img class="images github_icon" id="github" src="https://covidsafetyapp.github.io/webapp/images/github.png" style="width: 35px; height: 35px;"  onclick="window.location.href= 'https://github.com/covidsafetyapp/webapp' "/>
     

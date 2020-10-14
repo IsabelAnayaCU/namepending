@@ -1,28 +1,12 @@
 /*MAP TAB JS FORMATTING */
 
-/*
-//Get the Modal 
-var norlinModal = document.getElementById("norlin_modal"); 
+/*https://account.mapbox.com: make the map appear using access token from account */
 
-//Get image 
-var norlinImg = document.getElementById("norlin"); 
-//Insert into modal 
-var norlinModalImg = document.getElementById("img001"); 
-//Use alt text as caption 
-var captionText = document.getElementById("caption"); 
+mapboxgl.accessToken = '<sk.eyJ1IjoicG91cm5hcyIsImEiOiJja2c5ZHE4aDQwcTBwMnJtdTBiMjcyb2gyIn0.MPNsbHaLvewsgwIkz9lKtQ>'; 
 
-//on click functionality 
-area.onclick = function() {
-    modal.style.display = "block"; 
-    norlinModalImg.src = this.src; 
-    captionText.innerHTML = this.alt; 
-}
-
-//Span element to close modal 
-var span = document.getElementsByClassName("close")[0]; 
-
-//when user clicks on x, modal closes 
-span.onclick = function() {
-    modal.style.display = "none"; 
-}*/
-
+var map = new mapboxgl.Map({
+    container: 'map', // container id
+    style: 'mapbox://styles/mapbox/streets-v11', // style URL
+    center: [-74.5, 40], // starting position [lng, lat]
+    zoom: 9 // starting zoom
+});
