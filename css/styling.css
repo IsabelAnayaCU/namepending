@@ -43,11 +43,12 @@ h3{
 
 .topnav{
     background-color: #77a8a8;
+    text-decoration: black;
 }
 
 .topnav a{
     color: black;
-    text-decoration: none;
+    text-decoration: black;
 }
 
 .topnav a:hover{
