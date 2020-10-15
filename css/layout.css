@@ -1,0 +1,51 @@
+
+
+/*CSS WEBSITE LAYOUT FOR PAGES*/
+
+.header{
+    background-color: #3e4663;
+    text-align: center;
+    padding: 20px;
+}
+
+.topnav{
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+.column{
+    float: left; 
+    width: 33.33%;
+}
+
+.row:after {
+    content: ""; 
+    display: table; 
+    clear: both; 
+}
+
+.footer{
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
