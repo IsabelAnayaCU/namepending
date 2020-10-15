@@ -53,8 +53,9 @@ html, body{
 .card{
     padding: 16px;
     text-align: center; 
-    height: 250px; 
+    height: 150px; 
     width: 200px; 
+    margin-top: 20px; 
 }
 .footer{
     text-align: center;
