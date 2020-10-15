@@ -38,7 +38,8 @@ body{
 .card{
     background-color: #b0aac0; 
     color: black; 
-    font:'Carrois Gothic';;
+    font:'Carrois Gothic';
+    text-align: center; 
 }
 
 .footer{
