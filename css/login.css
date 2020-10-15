@@ -18,7 +18,7 @@ body {
 }
 
 .checkbox{
-  position: relative; 
+  position: static;
 }
 
 .login-form .login-control {
