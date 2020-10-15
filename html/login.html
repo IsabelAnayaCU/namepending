@@ -35,8 +35,9 @@
 
         <!--LINK CUSTOM CSS-->
         <link href="https://covidsafetyapp.github.io/webapp/css/login.css" rel="stylesheet" />
-        <link href="https://covidsafetyapp.github.io/webapp/css/app_style.css" rel="stylesheet" />
-        
+        <link href="https://covidsafetyapp.github.io/webapp/css/layout.css" rel="stylesheet" />
+        <link href="https://covidsafetyapp.github.io/webapp/css/styling.css" rel="stylesheet" />
+
         <!--LINK FONT-->
         <!--FONT IMPLEMENTATION: CARROIS GOTHIC-->
         <link href='https://fonts.googleapis.com/css?family=Carrois Gothic' rel='stylesheet'/>
@@ -44,10 +45,10 @@
 
     </head>
 
-    <body class="center text-center">
+    <body class="center">
         <!--DIV ELEMENT FOR GITHUB ICON-->
-        <div class="github-icon"> 
-            <img class="rounded-circle"
+        <div class="topright"> 
+            <img class="rounded-circle icon"
                 src="https://covidsafetyapp.github.io/webapp/icons/github.png"
                 alt="" 
                 width="45"
@@ -57,7 +58,7 @@
 
         <!--FORM CLASS AND USER ICON-->
         <form class="login-form">
-            <img class="rounded-circle" 
+            <img class="rounded-circle icon" 
                 src="https://covidsafetyapp.github.io/webapp/icons/profile_icon.png" 
                 alt="" 
                 width="72" 
@@ -80,15 +81,12 @@
                     id="password-input"
                     class="login-control"
                     placeholder="password"
-                    required 
-                    />
+                    required />
             
             <!--CHECKBOX: REMEMBER ME -->
             <div class="checkbox">
-                    <input type="checkbox"
-                            value="remember-me"
-                            id="yes"> <label for="yes"> remember me |
-                    </label>        
+                <label for="yes"> remember me <input type="checkbox"
+                    value="remember-me" id="yes" /> | </label>
 
                 <!--EXTERNAL LINK: FORGOT PASSWORD-->
                 <a href="https://media.giphy.com/media/3o6ozBgoGeBFUFvaz6/giphy.gif"> 
@@ -100,7 +98,7 @@
             <button class="btn btn-lg btn-primary"
                     type="submit"
                     onclick="window.location.href='https://covidsafetyapp.github.io/webapp/html/map.html'">
-                    sign in
+                    log in
             </button>
 
             <!--LINK: LINKS TO CREATE AN ACCOUNT PAGE-->
