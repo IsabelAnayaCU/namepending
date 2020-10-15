@@ -27,6 +27,7 @@ html, body{
     float: left; 
     width: 50%;
     padding: 5px 5px; 
+    text-align: center; 
 }
 
 .row:after {
