@@ -62,7 +62,7 @@
       </div>
 
       <div class="row"> 
-        <div class="column">
+        <div class="column center">
           <label for="user-type"> <h1>Please choose from the daily health forms:</h1> </label>
 
           <select name="UserTypes" id="user-type" class="form-choice center" placeholder="select">
@@ -114,34 +114,21 @@
                 </a>
             </outgroup>
           </select>
-          <input type="text" name="choice">
-
-          <button id="userChoice" class="btn btn-primary btn-block" 
-            onClick="goToForm()"> go </button>
+        </div> 
+        <div class="column center">
+           <!--POSITIVE COVID TEST-->
+          <div> 
+            <a class="button" href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/isolation.html" role="button">Learn more...</a>
+          </div>
+    
+            <!--NEGATIVE COVID TEST-->
+          <div> 
+            <a class="button" href="https://www.colorado.edu/protect-our-herd/guides" role="button">Learn more...</a>
+            </div> 
         </div> 
       </div>
 
-
-      <!--div for COVID result buttons and text -->
-      <div> 
-        <h1>have you recently received a COVID-19 test on the CU campus ?</h1>
-        <h2>check below to see if your results are ready and to find information on what to do with your results </h2>
-      </div>
-
-      <!--POSITIVE COVID TEST-->
-      <div> 
-        <h3>positive COVID-19 test ?</h3>
-        <p> did your most recent covid-19 test result came back positive? please click the button below to find information on what steps to take to keep yourself and your peers safe. hope you feel better soon! </p>
-        <a class="buttons" href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/isolation.html" role="button">Learn more...</a>
-      </div>
-
-       <!--NEGATIVE COVID TEST-->
-      <div> 
-        <h3>negative COVID-19 test ?</h3>
-        <p> did your most recent covid-19 test result came back negative? please click the button below to find information on how to continue being COVID safe.
-          <a class="buttons" href="https://www.colorado.edu/protect-our-herd/guides" role="button">Learn more...</a>
-        </p>
-       </div> 
+     
 
       <!--FOOTER NAVBAR-->
       <div class="footer">
