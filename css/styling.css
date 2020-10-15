@@ -55,14 +55,15 @@ h3{
     color: black;
 }
 
-.footer{
-    background-color: #e4d1d1;
-}
-
 .card{
     box-shadow: 0 4px 8 px 0 rgba(0, 0, 0, 0.2); 
     background-color: #77a8a8; 
 }
+
+.footer{
+    background-color: #e4d1d1;
+}
+
 .icon{
     border-color: black;
     border-radius: 50%;
