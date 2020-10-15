@@ -75,22 +75,7 @@ function openModal() {
             length.classList.add("invalid");
         }
 
-        // Validate password and confirm password are the same
-        if(myInput == confirmMyInput) {
-            match.classList.remove("invalid");
-            match.classList.add("valid");
-        } else {
-            match.classList.remove("valid");
-            match.classList.add("invalid");
-        }
-
     }
-
-
-    var result = string1.localeCompare(string2);
-
-    document.getElementById("test").innerHTML = result;
-
 
     confirmMyInput.onkeyup = function() {
                 // Validate password and confirmPassword
@@ -114,8 +99,6 @@ function enableButton(letter, capital, number, length, match) {
             button.disabled = false;
         }        
     }    
-
-
 function onClickFunction() {
     alert("Hey! I'm all green! Well done.")
 }

@@ -17,6 +17,16 @@ body{
     border: none; 
 }
 
+h1{
+    color: black; 
+    font-size: 20px; 
+}
+
+.form-choice{
+    color: black; 
+    background-color: #d9ecd0;
+    font-size: 16px; 
+}
 .header{
     background-color: #e4d1d1;
 }

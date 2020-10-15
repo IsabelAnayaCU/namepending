@@ -175,7 +175,7 @@
                         <!--BUTTON: SUBMIT-->
                         <div class="form-group"> 
                             <button id="submit_button" class="btn btn-primary btn-block login-btn" disabled
-                                    onClick="onClickFunction()"> create account </button>
+                                    onClick="myInput.onkeyup(), confirmMyInput.onkeyup()"> create account </button>
                         </div>
                     </div>
                     <div class="modal-footer"> 
@@ -205,7 +205,7 @@
                                 <b>8 characters</b>
                             </p>
                             <!--Password & Confirm Password Match-->
-                            <p id="match" class="invalid"> 
+                            <p id="match" class="invalid" onclick> 
                                 password and confirm password match 
                             </p>
                         </div>
