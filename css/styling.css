@@ -44,12 +44,18 @@ body{
     border-radius: 50%;
 }
 
+.btn{
+    background-color: #b9b0b0; 
+    color: black;
+    border: none; 
+}
+
 .login-form{
     background-color: #e4d1d1; 
 }
 
 .modal-login {		
-    color: #c2d4dd;
+    color: black;
 }
 
 .modal-content{
@@ -100,9 +106,8 @@ input[type=submit] {
   /* The message box is shown when the user clicks on the password field */
 #message {
   background: #f1f1f1;
-  color: #000;
-}
-  
+  color: black;
+} 
 
 /* Add a green text color and a checkmark when the requirements are right */
 .valid {
