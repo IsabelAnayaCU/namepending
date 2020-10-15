@@ -11,13 +11,7 @@ body{
     background-color: #e4d1d1;
 }
 
-.btn{
-    background-color: #b9b0b0; 
-    color: black;
-    border: none;
-}
-
-.button {
+.button, .btn {
     border: none;
     background-color: #b9b0b0; 
     color: black;
@@ -29,17 +23,19 @@ body{
     margin: 4px 2px;
     cursor: pointer;
 }
-  
 
 h1{
     color: black; 
-    font-size: 20px; 
+    font-size: 40x; 
 }
 
-.form-choice{
+h2{
     color: black; 
-    background-color: #d9ecd0;
-    font-size: 16px; 
+    font-size: 30px; 
+}
+h3{
+    color: black; 
+    font-size: 20px; 
 }
 .header{
     background-color: #e4d1d1;
@@ -59,17 +55,14 @@ h1{
     color: black;
 }
 
-.container{
-    background-color: #b0aac0; 
-    color: black; 
-    font:'Carrois Gothic';
-    text-align: center; 
-}
-
 .footer{
     background-color: #e4d1d1;
 }
 
+.card{
+    box-shadow: 0 4px 8 px 0 rgba(0, 0, 0, 0.2); 
+    background-color: #77a8a8; 
+}
 .icon{
     border-color: black;
     border-radius: 50%;
