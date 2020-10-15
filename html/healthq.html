@@ -63,30 +63,42 @@
 
       <div class="row"> 
         <div class="column center">
-          <label for="user-type"> <h1>Please choose from the daily health forms:</h1> </label>
+          <h1> Please select a daily health form: </h1>
+          <!--STUDENT HEALTH FORM-->
+          <label class="container"> 
+            student form 
+            <input type="radio" checked="checked" name="radio">
+            <a href="https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Student_Only_Symptom_Tracking_Form"
+              target="popup"
+              onclick="window.open('https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Student_Only_Symptom_Tracking_Form','popup','width=600,height=600'); return false;">
+            </a>
+            <span class="checkmark"></span>
+          </label>
 
-          <select name="UserTypes" id="user-type" class="form-choice center" placeholder="select">
-            <option value="student" id="student"> 
-              student form 
-              <a href="https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Student_Only_Symptom_Tracking_Form" 
-                  target="popup" 
-                  onclick="window.open('https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Student_Only_Symptom_Tracking_Form','popup','width=600,height=600'); return false;">
-              </a>
-            </option>
-            <option value="student-emp" id="studentEmp"> 
-              student employee form 
-              <a href="https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Student_Symptom_Tracking_Form" 
-                  target="popup" 
-                  onclick="window.open('https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Student_Symptom_Tracking_Form','popup','width=600,height=600'); return false;">
-              </a>
-            </option>
-            <option value="faculty-staff" id="facultystaff">
+          <!--STUDENT EMPLOYEE HEALTH FORM-->
+          <label class="container"> 
+            student employee form 
+            <input type="radio" checked="checked" name="radio">
+            <a href="https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Student_Symptom_Tracking_Form" 
+                target="popup" 
+                onclick="window.open('https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Student_Symptom_Tracking_Form','popup','width=600,height=600'); return false;">
+            </a>
+            <span class="checkmark"></span>
+          </label>
+
+          <!--FACULTY/STAFF HEALTH FORM-->
+          <label class="container"> 
+            student employee form 
+            <input type="radio" checked="checked" name="radio">
               <a href="https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Employee_Symptom_Tracking_Form"
                   target="popup"
                   onclick="window.open('https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Employee_Symptom_Tracking_Form', 'popup', 'width=600, height=600'); return false;">
               </a>
-            </option>
-            <outgroup label="Language Options for Faculty/Staff">
+            <span class="checkmark"></span>
+          </label>
+
+              
+            <!-- <outgroup label="Language Options for Faculty/Staff">
               <option value="spanish" id="spa"> spanish </option>
                 <a href="https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Employee_Symptom_Tracking_Form_Spanish"
                     target="popup"
@@ -112,9 +124,9 @@
                     target="popup"
                     onclick="window.open('https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Employee_Symptom_Tracking_Form_Laotian', 'popup', 'width=600, height=600'); return false;">
                 </a>
-            </outgroup>
-          </select>
+            </outgroup> -->
         </div> 
+
         <div class="column center">
            <!--POSITIVE COVID TEST-->
           <div> 
