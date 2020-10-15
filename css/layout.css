@@ -1,6 +1,10 @@
 
 
 /*CSS WEBSITE LAYOUT FOR PAGES*/
+
+*{
+    box-sizing: border-box; 
+}
 html, body{
     height:100%; /* important to vertically align the container */
     margin: auto;
