@@ -42,6 +42,8 @@ html, body{
 .card{
     padding: 16px;
     text-align: center; 
+    height: 250px; 
+    width: 200px; 
 }
 .footer{
     text-align: center;
