@@ -10,12 +10,6 @@ html, body{
     background-color: #3a4663;
 }
 
-.header{
-    background-color: #F1F1F1;
-    text-align: center;
-    padding: 20px;
-}
-
 .github-icon {
     position: absolute; 
     top: 0; 
