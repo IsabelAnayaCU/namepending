@@ -59,6 +59,9 @@ html, body{
     }
 }
 
+.icons{
+    position: relative; 
+}
 .footer {
     background-color: #F1F1F1;
     text-align: center;
