@@ -11,6 +11,12 @@ body{
     background-color: #e4d1d1;
 }
 
+.btn{
+    background-color: #b9b0b0; 
+    color: black;
+    border: none; 
+}
+
 .header{
     background-color: #e4d1d1;
 }
@@ -42,12 +48,6 @@ body{
 .icon{
     border-color: black;
     border-radius: 50%;
-}
-
-.btn{
-    background-color: #b9b0b0; 
-    color: black;
-    border: none; 
 }
 
 .login-form{
