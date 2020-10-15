@@ -70,6 +70,16 @@
                 center: [-105.267753, 40.008130]
             });
 
+            //ADD FUNCTIONALTIES
+            map.addControl(
+                //DIRECTIONS FROM A TO B
+                new MapboxDirections({
+                    accessToken: mapboxgl.accessToken
+                }),
+            'top-right'
+            );  
+
+            //SWITCHING BETWEEN MAP STYLES
             var layerList = document.getElementById('menu');
             var inputs = layerList.getElementsByTagName('input');
 
@@ -81,15 +91,6 @@
             for (var i = 0; i < inputs.length; i++) {
                 inputs[i].onclick = switchLayer;
             }
-
-            //ADD FUNCTIONALTIES
-            map.addControl(
-                //DIRECTIONS FROM A TO B
-                new MapboxDirections({
-                    accessToken: mapboxgl.accessToken
-                }),
-            'top-right'
-            );  
         </script>
 
         <!--JS SOURCES-->
