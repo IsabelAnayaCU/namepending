@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<!-- Imported Social Media Template from W3Schools Modified 
+<!-- Imported Social Media Template from W3Schools Modified
 to fit the needs for the COVID-19 Safety Application Home Page
 https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_social&stacked=h
 -->
@@ -24,11 +24,11 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_social&sta
         <!--FONT ASWESOME-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-        
+
         <!-- Bootstrap core CSS -->
-        <link rel="stylesheet" 
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
-        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" 
+        <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
 
         <!--MaxCDN from w3 schools-->
@@ -39,7 +39,7 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_social&sta
         <link type="css" href="https://covidsafetyapp.github.io/namepending/home.css" rel="stylesheet" />
 
     </head>
-    
+
     <body style="background-color: #c2d4dd;">
         <!-- Navbar -->
         <div class="w3-top">
@@ -47,7 +47,7 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_social&sta
             <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
 
                 <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-                
+
                 <a href="https://covidsafetyapp.github.io/namepending/home.html" class="w3-bar-item w3-button w3-padding-large w3-theme-11 w3-border-theme"><i class="fa fa-home w3-margin-right"></i>Home</a>
                 <a href="https://covidsafetyapp.github.io/namepending/map.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Map"><i class="fa fa-location-arrow"></i></a>
                 <a href="https://covidsafetyapp.github.io/namepending/covid.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="COVID-19 Information"><i class="fas fa-newspaper"></i></a>
@@ -56,8 +56,8 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_social&sta
                 <a href="https://covidsafetyapp.github.io/namepending/schedule.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Schedule"><i class="fas fa-book-open"></i></a>
                 <a href="https://covidsafetyapp.github.io/namepending/search.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Explore"><i class="fas fa-route"></i></a>
 
-            
-            
+
+
                 <!--ADD SEARCH BAR TO LEFT OF PROFILE ICON-->
 
                 <div class="w3-dropdown-hover w3-hide-small">
@@ -65,14 +65,14 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_social&sta
                     </a>
 
                     <div class="w3-dropdown-content w3-card-4 w3-bar-block w3-display-topright" style="width:300px">
-                        <a href="#" class="w3-bar-item w3-button fa fa-user"> John Doe (jodo5647)</a>
-                        <a href="https://covidsafetyapp.github.io/namepending/profile.html" class="w3-bar-item w3-button fa fa-id-card">Profile</a>
-                        <a href="https://covidsafetyapp.github.io/namepending/settings.html" class="w3-bar-item w3-button fa fa-cog">Settings</a>
-                        <a href="#" class="fa fa-sign-out-alt w3-bar-item w3-button"> Sign Out </a>
+                      <a href="#" class="w3-bar-item w3-button" id="username" disabled>Please log in.</a>
+                      <a href="https://covidsafetyapp.github.io/namepending/profile.html" class="w3-bar-item w3-button" style="visibility: hidden;" disabled>My Profile</a>
+                      <a href="https://covidsafetyapp.github.io/namepending/settings.html" class="w3-bar-item w3-button" style="visibility: hidden;" disabled>My Account</a>
+                      <a href="https://covidsafetyapp.github.io/namepending/login.html" class="fa fa-sign-out-alt w3-bar-item w3-button" id="signInOut"> Sign In </a>
                     </div>
                 </div>
             </div>
-        </div>   
+        </div>
 
         <!-- Navbar on small screens, currently doesn't show all the pages listed below -->
         <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
@@ -85,23 +85,23 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_social&sta
             <a href="#" class="w3-bar-item w3-button w3-padding-large">Search</a>
             <a href="#" class="w3-bar-item w3-button w3-padding-large">Resources</a>
             <a href="#" class="w3-bar-item w3-button w3-padding-large">Explore</a>
-            
+
             <img src="https://covidsafetyapp.github.io/namepending/images/profile_icon.png" class="w3-circle" style="height:23px; width:23px" >
             <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><i class="fas fa-sign-out-alt"></i></a>
         </div>
 
-        
-        
+
+
         <!-- Page Container -->
-        <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px; background-color: #c2d4dd;">   
-            <h1 style="text-align: center;"><b>COVID-19 Safety Application</b></h1> 
+        <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px; background-color: #c2d4dd;">
+            <h1 style="text-align: center;"><b>COVID-19 Safety Application</b></h1>
         <hr>
         <!-- The Grid -->
         <div class="w3-row">
             <div class="w3-row m2">
                 <!--Row 1, Left Column -->
                 <div class="w3-col m6" style="padding-right: 5px;">
-                    <!-- Quick Search --> 
+                    <!-- Quick Search -->
                     <div class="w3-card w3-round w3-hide-small">
                         <div class="w3-container" style="text-align: center; color: black; background-color: #e4d1d1;">
                         <h4>Quick Search</h4>
@@ -151,7 +151,7 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_social&sta
                                 </div>
                             <button onclick="window.open('https://news.google.com/covid19/map?hl=en-US&gl=US&ceid=US%3Aen', 'popup', 'width=600, height=600'); return false;" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-alt fa-fw w3-margin-right"></i> World: 40,895,435 </button>
                                 <div id="Demo3" class="w3-hide w3-container"></div>
-                        </div>      
+                        </div>
                     </div>
                 </div>
                 <!--Row 2, Right Column-->
@@ -169,7 +169,7 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_social&sta
                                 </div>
                             <button onclick="window.open('https://calendar.colorado.edu/virtual-events', 'popup', 'width=600, height=600'); return false;" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-alt fa-fw w3-margin-right"></i> CU Virtual Events </button>
                                 <div id="Demo3" class="w3-hide w3-container"></div>
-                        </div>      
+                        </div>
                     </div>
                 </div>
             </div>
@@ -177,7 +177,7 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_social&sta
             <div class="w3-row m6">
                 <!-- Row 3, Left Column-->
                 <div class="w3-col m6" style="padding-right: 5px; padding-top: 20px;">
-                    <!-- TO-DO LIST --> 
+                    <!-- TO-DO LIST -->
                     <div class="w3-card w3-round" style="background-color: #e4d1d1; color: black;">
                         <div class="w3-container">
                             <br>
@@ -195,13 +195,13 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_social&sta
 
                         <h3>Weekly Schedule</h3>
                         <hr class="w3-clear">
-                        
+
                         <img src="https://covidsafetyapp.github.io/namepending/images/schedule.png" style="width:100%;" class="w3-margin-bottom">
-                    </div> 
+                    </div>
                 </div>
             </div>
         </div>
-            
+
 
         <!--CHANCELLOR UPDATES-->
         <div class="w3-container w3-card w3-round w3-margin w3-theme-11 w3-center" style="background-color: #7d97a5;"><br>
@@ -214,9 +214,9 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_social&sta
                         <hr>
                 </button>
             <hr class="w3-clear">
-            
+
             <iframe src="https://covidsafetyapp.github.io/namepending/chancellor.pdf" style="width:100%; height:600px;" class="w3-margin-bottom" ></iframe>
-        </div> 
+        </div>
 
         <!-- End Page Container -->
         </div>
@@ -230,18 +230,18 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_social&sta
         <footer class="w3-container w3-theme-d5">
         <p>Created By Name Pending <a href="https://github.com/CSCI-3308-CU-Boulder/Name-Pending" target="_blank">Github</a></p>
         </footer>
-        
-        
+
+
         <!-- jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <!-- Popper JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <!-- JS CDN BOOTSTRAP-->    
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>    
+        <!-- JS CDN BOOTSTRAP-->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
         <!--Local JS-->
         <script src="https://covidsafetyapp.github.io/namepending/home.js" > </script>
 
     </body>
-</html> 
+</html>
