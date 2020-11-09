@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<!-- Imported Social Media Template from W3Schools Modified
+to fit the needs for the COVID-19 Safety Application Home Page
+https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_social&stacked=h
+-->
+
+<html>
+    <head>
+        <!-- TITLE -->
+        <title>Daily Health Forms</title>
+
+        <!-- META -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- STYLESHEET LINKS -->
+
+        <!--W3-->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+        <!--GOOGLE FONT-->
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+        <!--FONT ASWESOME-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+
+        <!--MaxCDN from w3 schools-->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <!--LOCAL STYLESHEET-->
+        <link type="css" href="resources/css/home.css" rel="stylesheet" />
+
+    </head>
+
+    <body class="w3-theme-d3 ">
+        <!-- Navbar -->
+        <%- include('../partials/navbar') %>
+
+        <!-- Navbar on small screens, currently doesn't show all the pages listed below -->
+        <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Interactive Map</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">COVID-19 Information</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Daily Health Forms</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Notifications</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Profile</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Schedule</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Search</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Resources</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Explore</a>
+
+            <img src="https://pournasengupta.github.io/testApp/images/profile_icon.png" class="w3-circle" style="height:23px; width:23px" >
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><i class="fas fa-sign-out-alt"></i></a>
+        </div>
+        <!-- Page Container -->
+        <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
+            <!-- The Grid -->
+            <div class="w3-row">
+                <!--Column 1-->
+                <div class="w3-col m3" style="padding-right: 4px;">
+
+                    <!--STUDENT DAILY HEALTH FORM-->
+                    <div class="w3-container w3-card w3-theme-d5 w3-round w3-margin" style="height:300px;"><br>
+                        <a href="https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Student_Only_Symptom_Tracking_Form" target="popup"
+                        onclick="window.open('https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Student_Only_Symptom_Tracking_Form','popup','width=600,height=600'); return false;">
+                        <h3 style="text-align: center;">Student Daily Health Form</h3>
+                        </a>
+                        <hr>
+                        <p>All students enrolled at CU Boulder must fill out this form each day they plan to be on campus for both general or academic purposes.</p>
+                    </div>
+
+                </div>
+
+                <!--Column 2-->
+                <div class="w3-col m3" style="padding-right: 4px;">
+                    <!--STUDENT EMPLOYEE DAILY HEALTH FORM-->
+                    <div class="w3-container w3-card w3-theme-d5 w3-round w3-margin" style="height:300px;"><br>
+                        <a href="https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Student_Symptom_Tracking_Form" target="popup"
+                        onclick="window.open('https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Student_Symptom_Tracking_Form','popup','width=600,height=600'); return false;">
+                        <h3 style="text-align: center;">Student Employee Daily Health Form</h3>
+                        </a>
+                        <hr>
+                        <p>All student employeeds working on campus (include student researchers) must fill out this form each day they are scheduled to work on campus. Students must also fill out the Student Daily Health Form.</p>
+                    </div>
+                </div>
+
+                <!--Column 3-->
+                <div class="w3-col m3" style="padding-right: 4px;">
+                    <!--FACULTY/STAFF DAILY HEALTH FORM-->
+                    <div class="w3-container w3-card w3-theme-d5 w3-round w3-margin" style="height:300px;"><br>
+                        <a href="https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Employee_Symptom_Tracking_Form" target="popup"
+                        onclick="window.open('https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Employee_Symptom_Tracking_Form','popup','width=600,height=600'); return false;">
+                        <h3 style="text-align: center;">Faculty & Staff Daily Health Form</h3>
+                        </a>
+                        <hr>
+                        <p> All Faculty, Staff, & Researchers must fill out this form each day they are scheduled to work on campus. </p>
+                    </div>
+                </div>
+
+                <!--Column 4-->
+                <div class="w3-col m3" style="padding-right: 4px;">
+                    <!--LANGUAGE OPTIONS FOR STAFF DAILY HEALTH FORM-->
+                    <div class="w3-container w3-card w3-theme-d5 w3-round w3-margin" style="height:300px;"><br>
+                        <a href="https://www.colorado.edu/daily-health-form" target="popup"
+                            onclick="window.open('https://www.colorado.edu/daily-health-form', 'popup', 'width=600,height=600'); return false;">
+                            <h3 style="text-align: center;">Language Options for Staff Daily Health Form</h3>
+                        </a>
+                        <hr>
+                        <ul style="text-align: center; list-style-type: none; margin: 0; padding: 0;">
+                            <li>
+                                <a href="https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Employee_Symptom_Tracking_Form_Spanish" target="popup"
+                                    onclick="window.open('https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Employee_Symptom_Tracking_Form_Spanish','popup','width=600,height=600'); return false;">
+                                    Spanish
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Employee_Symptom_Tracking_Form_Napali" target="popup"
+                                    onclick="window.open('https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Employee_Symptom_Tracking_Form_Napali','popup','width=600,height=600'); return false;">
+                                    Nepali
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Employee_Symptom_Tracking_Form_Mandarin" target="popup"
+                                    onclick="window.open('https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Employee_Symptom_Tracking_Form_Mandarin','popup','width=600,height=600'); return false;">
+                                    Mandarin
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Employee_Symptom_Tracking_Form_Tibetan" target="popup"
+                                    onclick="window.open('https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Employee_Symptom_Tracking_Form_Tibetan','popup','width=600,height=600'); return false;">
+                                    Tibetan
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Employee_Symptom_Tracking_Form_Laotian" target="popup"
+                                    onclick="window.open('https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Employee_Symptom_Tracking_Form_Laotian','popup','width=600,height=600'); return false;">
+                                    Laotian
+                            </li>
+                        </ul>
+                        <br>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Grid -->
+            <div class="w3-row">
+                <div class="w3-row">
+                    <!--Column 1-->
+                    <div class="w3-col m3" style="padding-right: 4px;">
+
+                        <!--STUDENT DAILY HEALTH FORM-->
+                        <div class="w3-container w3-card w3-theme-d3 w3-round w3-margin" style="height:300px;"><br>
+                            <a href="https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Student_Only_Symptom_Tracking_Form" target="popup"
+                            onclick="window.open('https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Student_Only_Symptom_Tracking_Form','popup','width=600,height=600'); return false;">
+                            <h3 style="text-align: center;">Student Daily Health Form</h3>
+                            </a>
+                            <hr>
+                            <p>All students enrolled at CU Boulder must fill out this form each day they plan to be on campus for both general or academic purposes.</p>
+                        </div>
+
+                    </div>
+
+                    <!--Column 2-->
+                    <div class="w3-col m3" style="padding-right: 4px;">
+                        <!--STUDENT EMPLOYEE DAILY HEALTH FORM-->
+                        <div class="w3-container w3-card w3-theme-d5 w3-round w3-margin" style="height:300px;"><br>
+                            <a href="https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Student_Symptom_Tracking_Form" target="popup"
+                            onclick="window.open('https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Student_Symptom_Tracking_Form','popup','width=600,height=600'); return false;">
+                            <h3 style="text-align: center;">Student Employee Daily Health Form</h3>
+                            </a>
+                            <hr>
+                            <p>All student employeeds working on campus (include student researchers) must fill out this form each day they are scheduled to work on campus. Students must also fill out the Student Daily Health Form.</p>
+                        </div>
+                    </div>
+
+                    <!--Column 3-->
+                    <div class="w3-col m3" style="padding-right: 4px;">
+                        <!--FACULTY/STAFF DAILY HEALTH FORM-->
+                        <div class="w3-container w3-card w3-theme-d5 w3-round w3-margin" style="height:300px;"><br>
+                            <a href="https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Employee_Symptom_Tracking_Form" target="popup"
+                            onclick="window.open('https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Employee_Symptom_Tracking_Form','popup','width=600,height=600'); return false;">
+                            <h3 style="text-align: center;">Faculty & Staff Daily Health Form</h3>
+                            </a>
+                            <hr>
+                            <p> All Faculty, Staff, & Researchers must fill out this form each day they are scheduled to work on campus. </p>
+                        </div>
+                    </div>
+
+                    <!--Column 4-->
+                    <div class="w3-col m3" style="padding-right: 4px;">
+                        <!--LANGUAGE OPTIONS FOR STAFF DAILY HEALTH FORM-->
+                        <div class="w3-container w3-card w3-theme-d5 w3-round w3-margin" style="height:300px;"><br>
+                            <a href="https://www.colorado.edu/daily-health-form" target="popup"
+                                onclick="window.open('https://www.colorado.edu/daily-health-form', 'popup', 'width=600,height=600'); return false;">
+                                <h3 style="text-align: center;">Language Options for Staff Daily Health Form</h3>
+                            </a>
+                            <hr>
+                            <ul style="text-align: center; list-style-type: none; margin: 0; padding: 0;">
+                                <li>
+                                    <a href="https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Employee_Symptom_Tracking_Form_Spanish" target="popup"
+                                        onclick="window.open('https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Employee_Symptom_Tracking_Form_Spanish','popup','width=600,height=600'); return false;">
+                                        Spanish
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Employee_Symptom_Tracking_Form_Napali" target="popup"
+                                        onclick="window.open('https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Employee_Symptom_Tracking_Form_Napali','popup','width=600,height=600'); return false;">
+                                        Nepali
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Employee_Symptom_Tracking_Form_Mandarin" target="popup"
+                                        onclick="window.open('https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Employee_Symptom_Tracking_Form_Mandarin','popup','width=600,height=600'); return false;">
+                                        Mandarin
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Employee_Symptom_Tracking_Form_Tibetan" target="popup"
+                                        onclick="window.open('https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Employee_Symptom_Tracking_Form_Tibetan','popup','width=600,height=600'); return false;">
+                                        Tibetan
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Employee_Symptom_Tracking_Form_Laotian" target="popup"
+                                        onclick="window.open('https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Employee_Symptom_Tracking_Form_Laotian','popup','width=600,height=600'); return false;">
+                                        Laotian
+                                    </a>
+                                </li>
+                            </ul>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+
+            <!--End Grid-->
+            </div>
+
+        <!-- End Page Container -->
+        </div>
+
+        <!-- Footer -->
+        <%- include('../partials/footer') %>
+
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- JS CDN BOOTSTRAP-->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <!--Local JS-->
+        <script src="resources/js/home.js" > </script>
+    </body>
+</html>

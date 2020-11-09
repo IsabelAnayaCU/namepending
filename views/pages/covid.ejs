@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<!-- Imported Social Media Template from W3Schools Modified
+to fit the needs for the COVID-19 Safety Application Home Page
+https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_social&stacked=h
+-->
+
+<html>
+    <head>
+        <!-- TITLE -->
+        <title>COVID-19 Information</title>
+
+        <!-- META -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- STYLESHEET LINKS -->
+
+        <!--W3-->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+        <!--GOOGLE FONT-->
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+        <!--FONT ASWESOME-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+
+        <!--MaxCDN from w3 schools-->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <!--LOCAL STYLESHEET-->
+        <link type="css" href="resources/css/home.css" rel="stylesheet" />
+
+    </head>
+
+    <body class="w3-theme-15">
+        <!-- Navbar -->
+        <%- include('../partials/navbar') %>
+
+        <!-- Navbar on small screens, currently doesn't show all the pages listed below -->
+        <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Interactive Map</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">COVID-19 Information</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Daily Health Forms</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Notifications</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Profile</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Schedule</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Search</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Resources</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Explore</a>
+
+            <img src="https://pournasengupta.github.io/testApp/images/profile_icon.png" class="w3-circle" style="height:23px; width:23px" >
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><i class="fas fa-sign-out-alt"></i></a>
+        </div>
+
+        <!-- Page Container -->
+        <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
+            <h1 style="text-align:center; color: white; background-color: #4d636f;"><b>COVID-19 Information & Resources</b></h1>
+            <!--Buff Safety-->
+            <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+                <img src="https://pournasengupta.github.io/testApp/images/buffsafety.png" style="width:100%" class="w3-margin-bottom" >
+            </div>
+
+            <!-- The Grid -->
+            <div class="w3-row">
+
+                <!--LEFT COLUMN: COVID Statistics & facts-->
+                <div class="w3-col m6" style="padding-right: 15px;">
+
+                    <!--NEW COVID CASES: -->
+                    <div class="w3-container w3-card w3-white w3-round w3-margin">
+                        <img src="https://pournasengupta.github.io/testApp/images/newcases.png" style="width:100%" class="w3-margin-bottom">
+                        <p><a href="https://usafacts.org/covid-recovery-hub/#health-section" target="_blank"> usafacts.org</a></p>
+                    </div>
+
+                    <!-- Resource Links Accordian -->
+                    <div class="w3-card w3-round">
+                        <div class="w3-white">
+                            <button onclick="window.open('https://covid19.colorado.gov/', 'popup', 'width=600, height=600'); return false;" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-gavel fa-fw w3-margin-right"></i> CO Dept. of Public Health & Environment</button>
+                                <div id="Demo1" class="w3-hide w3-container">
+                                    <p>Some text..</p>
+                                </div>
+                            <button onclick="window.open('https://search.211colorado.org/search?terms=COVID-19%20Testing&page=1&location=Colorado&service_area=colorado', 'popup', 'width=600, height=600'); return false;" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-virus fa-fw w3-margin-right"></i> Community Testing Sites</button>
+                                <div id="Demo2" class="w3-hide w3-container">
+                                    <p>Some more text..</p>
+                                </div>
+                            <button onclick="window.open('https://covid19.colorado.gov/covid-19-and-wildfires', 'popup', 'width=600, height=600'); return false;" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-fire fa-fw w3-margin-right"></i> COVID-19 & Wildfires </button>
+                                <div id="Demo3" class="w3-hide w3-container"></div>
+                            <button onclick="window.open('https://www.acmt.net/covid19web.html', 'popup', 'width=600, height=600'); return false;" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-laptop fa-fw w3-margin-right"></i> COVID-19 Webinar Series</button>
+                                <div id="Demo4" class="w3-hide w3-container"></div>
+                        </div>
+                    </div>
+                    <br>
+
+                </div>
+
+                <!--MIDDLE COLUMN: CU Boulder COVID Info-->
+                <div class="w3-col m3" style="padding-right: 10px">
+
+                    <!-- Active COVID-19 Cases -->
+                    <div class="w3-card w3-round w3-border" style="color: white; background-color: #4d636f; text-emphasis: emb;">
+                        <div class="w3-container">
+                        <p class="w3-center"></p>
+                        <h4 class="w3-center">Active COVID-19 Cases</h4>
+                        <p class="w3-center"></p>
+                        <hr>
+                            <p><i class="fa fa-calendar fa-fw w3-margin-right w3-text-theme"></i> Colorado: 86,857 </p>
+                        <hr>
+                            <p><i class="fa fa-flag-usa fa-fw w3-margin-right w3-text-theme"></i> U.S.A: 8.28 million </p>
+                        <hr>
+                            <p><i class="fa fa-globe fa-fw w3-margin-right w3-text-theme"></i> World: 40.6 million </p>
+                        </div>
+                    </div>
+                    <br>
+
+                    <!--Current Mode of Operation-->
+                    <div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small w3-hover-theme" style="text-align: center;">
+                        <p><strong>Current Mode: Expanded</strong></p>
+                        <p><a href="https://www.colorado.edu/roadmap/modes-operation"> colorado.edu</a></p>
+                    </div>
+
+                    <!--Campus Resources-->
+                    <div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small w3-hover-theme" style="text-align: center;">
+                        <p><strong>All CU Boulder Resources</strong></p>
+                        <p><a href="https://www.colorado.edu/covid-19-updates/campus-resources"> colorado.edu</a></p>
+                    </div>
+                </div>
+
+
+                <!--RIGHT COLUMN: COVID Safety Tips-->
+                <div class="w3-col m3" style="padding-right: 3px;">
+
+                    <!-- How COVID-19 Spreads -->
+                    <div class="w3-card w3-round w3-white w3-border">
+                        <div class="w3-container" style="color:aliceblue; background-color: #7d97a5;">
+                            <h5 class="w3-center">How COVID-19 Spreads</h5>
+                            <p class="w3-center" >
+                                <p><i class="fa fa-people-arrows fa-fw w3-margin-right w3-text-theme" style="color:aliceblue;"></i> Person-to-Person Contact</p>
+                                <p><i class="fa fa-chair fa-fw w3-margin-right w3-text-theme" style="color:aliceblue;"></i> Infected Surfaces & Objects </p>
+                                <p><i class="fa fa-head-side-cough fa-fw w3-margin-right w3-text-theme" style="color:aliceblue;"></i> Respiratory Droplets </p>
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+
+                    <!-- COVID-19 Symptoms -->
+                    <div class="w3-card w3-round w3-white w3-border">
+                        <div class="w3-container" style="color:aliceblue; background-color: #7d97a5;">
+                            <h5 class="w3-center"> Common COVID-19 Symptoms</h5>
+                            <p class="w3-center" >
+                                <p><i class="fa fa-thermometer-three-quarters fa-fw w3-margin-right w3-text-theme" style="color:aliceblue;"></i> Fever or Chills</p>
+                                <p><i class="fa fa-lungs-virus fa-fw w3-margin-right w3-text-theme" style="color:aliceblue;"></i> Cough </p>
+                                <p><i class="fa fa-frown-open fa-fw w3-margin-right w3-text-theme" style="color:aliceblue;"></i> New Loss of Taste & Smell </p>
+                                <p><i class="fa fa-head-side-virus fa-fw w3-margin-right w3-text-theme" style="color:aliceblue;"></i> Headache </p>
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+
+                    <!--Are You Sick? And Other COVID Questions-->
+                    <div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small w3-hover-theme">
+                        <p><strong>Not sure if you're sick, or have other COVID-19 questions?</strong></p>
+                        <p><a href="https://covid19.colorado.gov/covid19-symptoms">Click here to find out more!</a></p>
+                    </div>
+
+                </div>
+
+            <!-- End Grid -->
+            </div>
+
+
+        <!-- End Page Container -->
+        </div>
+        <br>
+
+        <!-- Footer -->
+        <%- include('../partials/footer') %>
+
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- JS CDN BOOTSTRAP-->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <!--Local JS-->
+        <script src="resources/js/home.js" > </script>
+    </body>
+</html>

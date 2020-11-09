@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<!-- Imported Social Media Template from W3Schools Modified
+to fit the needs for the COVID-19 Safety Application Home Page
+https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_social&stacked=h
+-->
+
+<html>
+    <head>
+        <!-- TITLE -->
+        <title>COVID-19 Safety App</title>
+
+        <!-- META -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- STYLESHEET LINKS -->
+
+        <!--W3-->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+        <!--GOOGLE FONT-->
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+        <!--FONT ASWESOME-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+
+        <!--MaxCDN from w3 schools-->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <!--LOCAL STYLESHEET-->
+        <link type="css" href="resources/css/home.css" rel="stylesheet" />
+
+    </head>
+
+    <body style="background-color: #c2d4dd;">
+        <!-- Navbar -->
+        <%- include('../partials/navbar') %>
+
+        <!-- Navbar on small screens, currently doesn't show all the pages listed below -->
+        <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Interactive Map</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">COVID-19 Information</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Daily Health Forms</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Notifications</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Profile</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Schedule</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Search</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Resources</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Explore</a>
+
+            <img src="https://covidsafetyapp.github.io/namepending/images/profile_icon.png" class="w3-circle" style="height:23px; width:23px" >
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><i class="fas fa-sign-out-alt"></i></a>
+        </div>
+
+
+
+        <!-- Page Container -->
+        <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px; background-color: #c2d4dd;">
+            <h1 style="text-align: center;"><b>COVID-19 Safety Application</b></h1>
+        <hr>
+        <!-- The Grid -->
+        <div class="w3-row">
+            <div class="w3-row m2">
+                <!--Row 1, Left Column -->
+                <div class="w3-col m6" style="padding-right: 5px;">
+                    <!-- Quick Search -->
+                    <div class="w3-card w3-round w3-hide-small">
+                        <div class="w3-container" style="text-align: center; color: black; background-color: #e4d1d1;">
+                        <h4>Quick Search</h4>
+                        <p>
+                            <span class="w3-tag w3-small w3-theme-d5">C4C</span>
+                            <span class="w3-tag w3-small w3-theme-d4">UMC</span>
+                            <span class="w3-tag w3-small w3-theme-d3">C.A.S.E</span>
+                            <span class="w3-tag w3-small w3-theme-d2">Porter</span>
+                            <span class="w3-tag w3-small w3-theme-d1">Norlin </span>
+                            <span class="w3-tag w3-small w3-theme">Starbucks</span>
+                            <span class="w3-tag w3-small w3-theme-l1">Engineering</span>
+                            <span class="w3-tag w3-small w3-theme-l2">Bruce Willis</span>
+                            <span class="w3-tag w3-small w3-theme-l3">Eaton HUMN</span>
+                            <span class="w3-tag w3-small w3-theme-l4">ECON</span>
+                            <span class="w3-tag w3-small w3-theme-l5">Farrand Field</span>
+                        </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Row 1, Right Column-->
+                <div class="w3-col m6" style="padding-left:10px;">
+                    <!-- Daily Health Q Box -->
+                    <div class="w3-container w3-card w3-display-container w3-round  w3-border w3-theme-border w3-margin-bottom w3-hide-small" style="height:100px; color: black; background-color: #e4d1d1; text-align: center;">
+                        <span onclick="this.parentElement.style.display='none'" class="w3-button w3-theme-14 w3-display-topright">
+                        <i class="fa fa-remove"></i>
+                        </span>
+                        <p><h4>Have you filled out your Daily Health Questionnaire today?</h4></p>
+                        <p><a href="https://covidsafetyapp.github.io/namepending/healthq.html">Click here to fill it out!</a></p>
+                    </div>
+                </div>
+           </div>
+
+            <div class="w3-row m2">
+                <!--Row 2, Let Column-->
+                <div class="w3-col m6" style="padding-right: 5px; ">
+                    <!-- Active COVID-19 Cases -->
+                    <div class="w3-card w3-round">
+                        <div class="w3-theme-d1">
+                            <button onclick="window.open('https://news.google.com/covid19/map?hl=en-US&gl=US&ceid=US%3Aen&mid=%2Fm%2F01n4w', 'popup', 'width=600, height=600'); return false;" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-info-circle fa-fw w3-margin-right"></i> Colorado: 87,966 </button>
+                                <div id="Demo1" class="w3-hide w3-container">
+                                    <p>Some text..</p>
+                                </div>
+                            <button onclick="window.open('https://news.google.com/covid19/map?hl=en-US&mid=%2Fm%2F09c7w0&gl=US&ceid=US%3Aen', 'popup', 'width=600, height=600'); return false;" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-external-link-alt fa-fw w3-margin-right"></i> U.S.A: 8,316,019</button>
+                                <div id="Demo2" class="w3-hide w3-container">
+                                    <p>Some more text..</p>
+                                </div>
+                            <button onclick="window.open('https://news.google.com/covid19/map?hl=en-US&gl=US&ceid=US%3Aen', 'popup', 'width=600, height=600'); return false;" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-alt fa-fw w3-margin-right"></i> World: 40,895,435 </button>
+                                <div id="Demo3" class="w3-hide w3-container"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--Row 2, Right Column-->
+                <div class="w3-col m6" style="padding-left: 5px; padding-bottom: 10px;">
+                    <!-- CU Links Accordian -->
+                    <div class="w3-card w3-round">
+                        <div class="w3-theme-d1">
+                            <button onclick="window.open('https://www.colorado.edu/covid-19-ready-dashboard', 'popup', 'width=600, height=600'); return false;" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-info-circle fa-fw w3-margin-right"></i> COVID-19 Dashboard</button>
+                                <div id="Demo1" class="w3-hide w3-container">
+                                    <p>Some text..</p>
+                                </div>
+                            <button onclick="window.open('https://www.colorado.edu/today/', 'popup', 'width=600, height=600'); return false;" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-external-link-alt fa-fw w3-margin-right"></i> CU Boulder Today</button>
+                                <div id="Demo2" class="w3-hide w3-container">
+                                    <p>Some more text..</p>
+                                </div>
+                            <button onclick="window.open('https://calendar.colorado.edu/virtual-events', 'popup', 'width=600, height=600'); return false;" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-alt fa-fw w3-margin-right"></i> CU Virtual Events </button>
+                                <div id="Demo3" class="w3-hide w3-container"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-row m6">
+                <!-- Row 3, Left Column-->
+                <div class="w3-col m6" style="padding-right: 5px; padding-top: 20px;">
+                    <!-- TO-DO LIST -->
+                    <div class="w3-card w3-round" style="background-color: #e4d1d1; color: black;">
+                        <div class="w3-container">
+                            <br>
+                            <iframe src="https://akashpal95.github.io/Listify/" style="width:100%; height:515px;" class="w3-margin-bottom">
+                            </iframe>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+
+                <!-- Row 3, Right Column-->
+                <div class="w3-col m6" style="padding-left: 5px;">
+                    <!--WEEKLY SCHEDULE-->
+                    <div class="w3-container w3-card w3-round w3-margin" style="background-color: #b9b0b0;"><br>
+
+                        <h3>Weekly Schedule</h3>
+                        <hr class="w3-clear">
+
+                        <img src="https://covidsafetyapp.github.io/namepending/images/schedule.png" style="width:100%;" class="w3-margin-bottom">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--CHANCELLOR UPDATES-->
+        <div class="w3-container w3-card w3-round w3-margin w3-theme-11 w3-center" style="background-color: #7d97a5;"><br>
+                <button class="w3-round w3-center" style="padding: 15px 32px; background-color: #c2d4dd; border: none; border-radius: 20%;">
+                    <h3 style="text-align: center;">From the Chancellor</h3>
+                    <p style="text-align: center;">
+                        <hr>
+                        <a href="https://covidsafetyapp.github.io/namepending/chancellor.pdf" target="_blank"> Open in new window</a>
+                    </p>
+                        <hr>
+                </button>
+            <hr class="w3-clear">
+
+            <iframe src="https://covidsafetyapp.github.io/namepending/chancellor.pdf" style="width:100%; height:600px;" class="w3-margin-bottom" ></iframe>
+        </div>
+
+        <!-- End Page Container -->
+        </div>
+        <br>
+
+        <!-- Footer -->
+        <%- include('../partials/footer') %>
+
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- JS CDN BOOTSTRAP-->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+        <!--Local JS-->
+        <script src="resources/js/home.js" > </script>
+
+    </body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- TITLE -->
+        <title>Log In</title>
+
+        <!-- META -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- STYLESHEET LINKS -->
+
+        <!--W3-->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+        <!--GOOGLE FONT-->
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+        <!--FONT ASWESOME-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+
+        <!--MaxCDN from w3 schools-->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <!--LOCAL STYLESHEET-->
+        <link type="css" href="resources/css/home.css" rel="stylesheet" />
+
+    </head>
+
+    <body style="background-color: #c2d4dd; height=100%">
+        <!-- Navbar -->
+        <%- include('../partials/navbar') %>
+
+        <!-- Navbar on small screens, currently doesn't show all the pages listed below -->
+        <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Interactive Map</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">COVID-19 Information</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Daily Health Forms</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Notifications</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Profile</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Schedule</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Search</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Resources</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Explore</a>
+
+            <img src="https://covidsafetyapp.github.io/namepending/images/profile_icon.png" class="w3-circle" style="height:23px; width:23px" >
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><i class="fas fa-sign-out-alt"></i></a>
+        </div>
+
+
+
+        <!-- Page Container -->
+        <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px; background-color: #c2d4dd;">
+            <h1 style="text-align: center;"><b>COVID-19 Safety Application</b></h1>
+
+          <div class="w3-card w3-round w3-hide-small" style=" max-width: 50%; margin: auto; margin-top: 40px;">
+            <div class="w3-container" style="text-align: center; color: black; background-color: #e4d1d1; min-height: 500px; padding: 100px;">
+              <h2>Log in to your account</h2>
+              <br>
+                <form style="width: 50%; margin: auto;">
+                  <div class="form-group">
+        						<input type="text" class="form-control" name="username" placeholder="Username"
+        							required="required">
+        					</div>
+                  <div class="form-group">
+        						<input id="psw" type="password" class="form-control" name="password" placeholder="Password"
+        							required="required">
+        					</div>
+                  <div class="form-group">
+        						<button id="submit_button" class="btn btn-primary btn-block login-btn"
+        							onClick="">Log in</button>
+        					</div>
+                </form>
+                <br><br>
+                <a href="#myModal" class="btn btn-info" data-toggle="modal" onclick="openSignUp()">New User</a>
+            </div>
+          </div>
+
+          <div id="myModal" class="modal fade">
+            <div class="modal-dialog modal-login">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <div class="avatar">
+                    <img src="https://www.tutorialrepublic.com/examples/images/avatar.png" alt="Avatar">
+                  </div>
+                  <h4 class="modal-title">Sign Up</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="username" placeholder="Username"
+                      required="required">
+                  </div>
+                  <div class="form-group">
+                    <input id="psw" type="password" class="form-control" name="password" placeholder="Password"
+                      required="required">
+                  </div>
+                  <div class="form-group">
+                    <input id="cpsw" type="password" class="form-control" name="confirm password"
+                      placeholder="Confirm Password" required="required">
+                  </div>
+                  <div class="form-group">
+                    <button id="my_submit_button" class="btn btn-primary btn-block login-btn" disabled
+                      onClick="onClickFunction()">Sign Up</button>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <div id="message" style="display:block">
+                    <h3>Password must contain the following:</h3>
+                    <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                    <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                    <p id="number" class="invalid">A <b>number</b></p>
+                    <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                    <p id="match" class="invalid">Password and Confirm Password Match</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <br>
+
+
+        <!-- End Page Container -->
+        </div>
+        <br>
+
+        <!-- Footer -->
+        <%- include('../partials/footer') %>
+
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- JS CDN BOOTSTRAP-->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <!--Local JS-->
+        <script src="resources/js/login.js" > </script>
+        <!--Sign Up JS-->
+        <script src="resources/js/signup.js"></script>
+
+    </body>
+    </html>
