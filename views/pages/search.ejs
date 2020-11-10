@@ -103,30 +103,17 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_social&sta
                   </div>
                   <br>
 
-                  <div id="faq">
-
                     <%
                       if(faq) {
                         var cardBit = '';
                         faq.forEach(function(item) {
-                          cardBit += '<div class="w3-card w3-round w3-border" style="color: white; background-color: #4d636f; text-emphasis: emb;">
-                            <div class="w3-container"> <h5 class="w3-center"' + item.question + '</h5> </div></div>'
+                          cardBit += '<div class="w3-card w3-round w3-border" style="color: white; background-color: #4d636f; text-emphasis: emb;"><div class="w3-container"> <h5 class="w3-center">' + item.question + '</h5> </div></div>'
                         }); %>
                         <%- cardBit %>
                     <% } %>
 
 
-
-                  </div>
-                    <!-- frequently asked questions, pull from database>
-
-                    <!-- Active COVID-19 Cases -->
-                    <div class="w3-card w3-round w3-border" style="color: white; background-color: #4d636f; text-emphasis: emb;">
-                        <div class="w3-container">
-                        <h4 class="w3-center">Active COVID-19 Cases</h4>
-
-                        </div>
-                    </div>
+                    <!-- frequently asked questions, pull from database -->
                     <br>
                 </div>
 
@@ -143,6 +130,12 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_social&sta
                         </div>
                     </div>
                     <br>
+
+                    <div class="w3-card w3-round w3-border" style="color: white; background-color: #4d636f; text-emphasis: emb;">
+                      <div class="w3-container">
+                        <h5 class="w3-center">No events scheduled.</h5>
+                      </div>
+                    </div>
 
                 </div>
 
