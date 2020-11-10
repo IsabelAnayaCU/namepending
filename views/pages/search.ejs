@@ -103,20 +103,28 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_social&sta
                   </div>
                   <br>
 
+                  <div id="faq">
+
+                    <%
+                      if(faq) {
+                        var cardBit = '';
+                        faq.forEach(function(item) {
+                          cardBit += '<div class="w3-card w3-round w3-border" style="color: white; background-color: #4d636f; text-emphasis: emb;">
+                            <div class="w3-container"> <h5 class="w3-center"' + item.question + '</h5> </div></div>'
+                        }); %>
+                        <%- cardBit %>
+                    <% } %>
+
+
+
+                  </div>
                     <!-- frequently asked questions, pull from database>
 
                     <!-- Active COVID-19 Cases -->
                     <div class="w3-card w3-round w3-border" style="color: white; background-color: #4d636f; text-emphasis: emb;">
                         <div class="w3-container">
-                        <p class="w3-center"></p>
                         <h4 class="w3-center">Active COVID-19 Cases</h4>
-                        <p class="w3-center"></p>
-                        <hr>
-                            <p><i class="fa fa-calendar fa-fw w3-margin-right w3-text-theme"></i> Colorado: 86,857 </p>
-                        <hr>
-                            <p><i class="fa fa-flag-usa fa-fw w3-margin-right w3-text-theme"></i> U.S.A: 8.28 million </p>
-                        <hr>
-                            <p><i class="fa fa-globe fa-fw w3-margin-right w3-text-theme"></i> World: 40.6 million </p>
+
                         </div>
                     </div>
                     <br>

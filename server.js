@@ -4,9 +4,23 @@ var bodyParser = require('body-parser'); //Ensure our body-parser tool has been 
 app.use(bodyParser.json());              // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
+//Create Database Connection
+var pgp = require('pg-promise')();
+
 // set the view engine to ejs
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/'));//This line is necessary for us to use relative paths and access our resources directory
+
+const dbConfig = {
+	host: 'localhost',
+	port: 5432,
+	database: 'covid_searches',
+	user: 'postgres',
+	password: 'gogo'
+};
+
+var db = pgp(dbConfig);
+
 
 /********** PAGES **********/
 //TODO: change all images to /resources path
@@ -55,7 +69,32 @@ app.get('/schedule', function(req, res) {
 
 //search/explore
 app.get('/search', function(req, res) {
-  res.render('pages/search');
+  var topLocations = "SELECT search_location FROM locations ORDER BY count DESC LIMIT 10;";
+  var topSearch = "SELECT search FROM searches;";
+  var faq = "SELECT question FROM faq ORDER BY count DESC LIMIT 10;";
+
+  db.task('get-everything', task => {
+      return task.batch([
+          task.any(topLocations),
+          task.any(topSearch),
+          task.any(faq)
+      ]);
+  })
+  .then(info => {
+  	res.render('pages/search',{
+			locations: info[0],
+			searches: info[1],
+			faq: info[2] //actually currently used
+		})
+  })
+  .catch(err => {
+        console.log('error', err);
+        res.render('pages/search', {
+            locations: info[0],
+            searches: info[1],
+            faq: info[2]
+        });
+    });
 });
 
 //profile NOT FINISHED
