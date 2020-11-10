@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<!-- Imported Social Media Template from W3Schools Modified
+to fit the needs for the COVID-19 Safety Application Home Page
+https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_social&stacked=h
+-->
+
+<html>
+    <head>
+        <!-- TITLE -->
+        <title>Explore</title>
+
+        <!-- META -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- STYLESHEET LINKS -->
+
+        <!--W3-->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+        <!--GOOGLE FONT-->
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+        <!--FONT ASWESOME-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+
+        <!--MaxCDN from w3 schools-->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <!--LOCAL STYLESHEET-->
+        <link type="css" href="resources/css/home.css" rel="stylesheet" />
+
+    </head>
+
+    <body class="w3-theme-15">
+        <!-- Navbar -->
+        <%- include('../partials/navbar') %>
+
+        <!-- Navbar on small screens, currently doesn't show all the pages listed below -->
+        <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Interactive Map</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">COVID-19 Information</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Daily Health Forms</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Notifications</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Profile</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Schedule</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Search</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Resources</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Explore</a>
+
+            <img src="https://pournasengupta.github.io/testApp/images/profile_icon.png" class="w3-circle" style="height:23px; width:23px" >
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><i class="fas fa-sign-out-alt"></i></a>
+        </div>
+
+        <!-- Page Container -->
+        <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
+            <h1 style="text-align:center; color: white; background-color: #4d636f;"><b>Explore & FAQs</b></h1>
+
+            <!-- The Grid -->
+            <div class="w3-row">
+
+                <!--LEFT COLUMN: Search-->
+                <div class="w3-col m6" style="padding-right: 15px;">
+
+
+                    <!-- Title Card -->
+                    <div class="w3-card w3-round w3-white w3-border">
+                        <div class="w3-container" style="color:aliceblue; background-color: #7d97a5;">
+                            <h5 class="w3-center">Search</h5>
+                        </div>
+                    </div>
+                    <br>
+
+                    <!-- Resource Links Accordian -->
+                    <div class="w3-card w3-round">
+                        <div class="w3-white">
+                          <form action="https://www.google.com/search" method="get" name="searchform">
+                            <input autocomplete="on" class="form-control search" style="width: 80%; float: left;" name="q" placeholder="Google search" required="required"  type="text">
+                            <button class="btn btn-primary" style="float:right; width: 18%;" type="submit">Search</button>
+                          </form>
+                        </div>
+                    </div>
+                    <br>
+
+                </div>
+
+                <!--MIDDLE COLUMN: FAQ-->
+                <div class="w3-col m3" style="padding-right: 10px">
+
+                  <!-- Title Card -->
+                  <div class="w3-card w3-round w3-white w3-border">
+                      <div class="w3-container" style="color:aliceblue; background-color: #7d97a5;">
+                          <h5 class="w3-center">Frequently Asked Questions and Locations</h5>
+                      </div>
+                  </div>
+                  <br>
+
+                  <div id="faq">
+
+                    <%
+                      if(faq) {
+                        var cardBit = '';
+                        faq.forEach(function(item) {
+                          cardBit += '<div class="w3-card w3-round w3-border" style="color: white; background-color: #4d636f; text-emphasis: emb;">
+                            <div class="w3-container"> <h5 class="w3-center"' + item.question + '</h5> </div></div>'
+                        }); %>
+                        <%- cardBit %>
+                    <% } %>
+
+
+
+                  </div>
+                    <!-- frequently asked questions, pull from database>
+
+                    <!-- Active COVID-19 Cases -->
+                    <div class="w3-card w3-round w3-border" style="color: white; background-color: #4d636f; text-emphasis: emb;">
+                        <div class="w3-container">
+                        <h4 class="w3-center">Active COVID-19 Cases</h4>
+
+                        </div>
+                    </div>
+                    <br>
+                </div>
+
+
+                <!--RIGHT COLUMN: Events on Campus-->
+                <div class="w3-col m3" style="padding-right: 3px;">
+
+                    <!-- Title Card -->
+                    <div class="w3-card w3-round w3-white w3-border">
+                        <div class="w3-container" style="color:aliceblue; background-color: #7d97a5;">
+                            <h5 class="w3-center">Events on Campus</h5>
+                            <p class="w3-center">
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+
+                </div>
+
+            <!-- End Grid -->
+            </div>
+
+
+        <!-- End Page Container -->
+        </div>
+        <br>
+
+        <!-- Footer -->
+        <%- include('../partials/footer') %>
+
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- JS CDN BOOTSTRAP-->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <!--Local JS-->
+        <script src="resources/js/home.js" > </script>
+        <script src="resources/js/explore.js" > </script>
+    </body>
+</html>
