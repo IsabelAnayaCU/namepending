@@ -1,0 +1,65 @@
+/* searches from Isabel, users from Melissa */
+
+DROP DATABASE IF EXISTS covid_app;
+CREATE DATABASE covid_app;
+\c covid_app;
+
+CREATE TABLE IF NOT EXISTS searches (
+	search 			TEXT PRIMARY KEY,
+	question_key_words	TEXT[],
+	location_key_words	TEXT[],
+	count 			INT
+);
+INSERT INTO searches (search, question_key_words, location_key_words, count) VALUES
+('Where is the umc', '{where}', '{umc}', 1),
+('When are buildings open', '{"buildings", "open"}', NULL, 1),
+('Are we in quarantine', '{quarantine}', NULL, 1),
+('How many people can be on one bus', '{"people", "bus"}', NULL, 1),
+('Where to get food', '{"where", "food"}', NULL, 1);
+
+CREATE TABLE IF NOT EXISTS locations (
+	key_word		TEXT PRIMARY KEY,
+	search_location		TEXT,
+	count 			INT
+);
+INSERT INTO locations (key_word, search_location, count) VALUES
+('{engineering}', 'Engineering Center', 3),
+('{c4c}', 'C4C', 5),
+('{norlin}', 'Norlin Library', 2),
+('{math}', 'Math Building', 1),
+('{eaton}', 'Eaton Humanities', 2);
+
+CREATE TABLE IF NOT EXISTS faq (
+	question		TEXT PRIMARY KEY,
+	count			INT,
+	key_words		TEXT[]
+);
+INSERT INTO faq SELECT search_location, count, key_word::text[] FROM locations;
+INSERT INTO faq SELECT search, count, question_key_words FROM searches;
+
+CREATE TABLE IF NOT EXISTS login_information(
+	id SERIAL PRIMARY KEY,
+	name VARCHAR(50) NOT NULL,
+	username VARCHAR(50),
+	email text,
+	password text,
+	usertype text,
+	phonenumber text
+);
+INSERT INTO login_information(name, username, email, password, usertype, phonenumber)
+VALUES('Melissa Borfitz', 'mebo0253', 'mebo0253@colorado.edu', 'abcd1234!', 'Student', '3033254358'),
+('Pourna Sengupta', 'Pourna', 'Pourna.Sengupta@colorado.edu', 'bcde2345!', 'Student', '3031000000'),
+('Isabel Anaya', 'Isabel', 'Isabel.Anaya@colorado.edu', 'cdef3456!', 'Student', '3032000000'),
+('Aldous Jeon', 'Aldous', 'alje8278@colorado.edu', 'defg4567!', 'Student', '3033000000'),
+('Lauren Keychenko', 'Lauren', 'Lauren.Keychenko@colorado.edu', 'efgh5678!', 'Student', '3034000000'),
+('Asa Ashraf', 'Asa', 'asas9274@colorado.edu', 'fghi6789!', 'Faculty', '3035000000'),
+('Sreesha Nath', 'Sreesha', 'Sreesha.Nath@colorado.edu', 'ghij7890!', 'Faculty', '3036000000'),
+('Carrie Sadler', 'Carrie', 'Carrie.Sadler@colorado.edu', 'hijk8901!', 'Faculty', '3037000000'),
+('Vishwanath Kulkarni', 'Vishwanath', 'Vishwanath.Kulkarni@colorado.edu', 'ijkl9012!', 'Staff', '3038000000'),
+('Keyuan Huang', 'Keyuan', 'kehu7239@colorado.edu', 'jklm0123!', 'Staff', '3039000000'),
+('Visitor1', 'Vis1', 'Visitor1@gmail.com', 'klmn0123!', 'Visitor', '3039100000'),
+('Visitor2', 'Vis2', 'Visitor2@gmail.com', 'lmno0123!', 'Visitor', '3039200000'),
+('Visitor3', 'Vis3', 'Visitor3@gmail.com', 'mnop0123!', 'Visitor', '3039300000'),
+('Visitor4', 'Vis4', 'Visitor4@gmail.com', 'nopq0123!', 'Visitor', '3039400000'),
+('Visitor5', 'Vis5', 'Visitor5@gmail.com', 'opqr0123!', 'Visitor', '3039500000')
+;

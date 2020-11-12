@@ -4,6 +4,7 @@ This interactive website for CU Boulder Students, Faculty/Staff, and Visitors to
 
 ### To set up
 Download/copy the files.  
-Run 'npm install' in the main directory (contains resources and views folders).  
+Run 'npm install' in the main directory (contains resources and views folders).
+In postgres, run all lines of Database_setup.txt.
 Run 'node server.js'.  
 Go to localhost:3000.   
