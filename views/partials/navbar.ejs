@@ -1,0 +1,32 @@
+<!-- Navbar -->
+<div class="w3-top">
+
+    <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+
+        <a href="/home" class="w3-bar-item w3-button w3-padding-large w3-theme-11 w3-border-theme"><i class="fa fa-home w3-margin-right"></i>Home</a>
+        <a href="/map" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Map"><i class="fa fa-location-arrow"></i></a>
+        <a href="/covid" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="COVID-19 Information"><i class="fas fa-newspaper"></i></a>
+        <a href="/healthq" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Daily Health Questionnaire"><i class="fas fa-laptop-medical"></i></a>
+        <a href="/resources" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Resources"><i class="fas fa-list-alt"></i></a>
+        <a href="/schedule" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Schedule"><i class="fas fa-book-open"></i></a>
+        <a href="/search" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Explore"><i class="fas fa-route"></i></a>
+
+
+
+        <!--ADD SEARCH BAR TO LEFT OF PROFILE ICON-->
+
+        <div class="w3-dropdown-hover w3-hide-small">
+            <a href="/profile" class="w3-bar-item w3-button w3-hide-small w3-display-topright w3-padding-large w3-hover-white" title="Profile"><i class="fas fa-user-circle"></i>
+            </a>
+
+            <div class="w3-dropdown-content w3-card-4 w3-bar-block w3-display-topright" style="width:300px">
+              <p class="w3-bar-item w3-button" id="username" disabled>Please log in.</p>
+              <a href="/profile" class="w3-bar-item w3-button" style="visibility: hidden;" disabled>My Profile</a>
+              <a href="/settings" class="w3-bar-item w3-button" style="visibility: hidden;" disabled>My Account</a>
+              <a href="/login" class="fa fa-sign-out-alt w3-bar-item w3-button" id="signInOut"> Sign In </a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -30,43 +30,13 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
         <!--LOCAL STYLESHEET-->
-        <link type="css" href="https://covidsafetyapp.github.io/namepending/home.css" rel="stylesheet" />
+        <link type="css" href="resources/css/home.css" rel="stylesheet" />
 
     </head>
 
     <body style="background-color: #c2d4dd; height=100%">
         <!-- Navbar -->
-        <div class="w3-top">
-
-            <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
-
-                <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-
-                <a href="https://covidsafetyapp.github.io/namepending/home.html" class="w3-bar-item w3-button w3-padding-large w3-theme-11 w3-border-theme"><i class="fa fa-home w3-margin-right"></i>Home</a>
-                <a href="https://covidsafetyapp.github.io/namepending/map.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Map"><i class="fa fa-location-arrow"></i></a>
-                <a href="https://covidsafetyapp.github.io/namepending/covid.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="COVID-19 Information"><i class="fas fa-newspaper"></i></a>
-                <a href="https://covidsafetyapp.github.io/namepending/healthq.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Daily Health Questionnaire"><i class="fas fa-laptop-medical"></i></a>
-                <a href="https://covidsafetyapp.github.io/namepending/resources.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Resources"><i class="fas fa-list-alt"></i></a>
-                <a href="https://covidsafetyapp.github.io/namepending/schedule.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Schedule"><i class="fas fa-book-open"></i></a>
-                <a href="https://covidsafetyapp.github.io/namepending/search.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Explore"><i class="fas fa-route"></i></a>
-
-
-
-                <!--ADD SEARCH BAR TO LEFT OF PROFILE ICON-->
-
-                <div class="w3-dropdown-hover w3-hide-small">
-                    <a href="https://covidsafetyapp.github.io/namepending/profile.html" class="w3-bar-item w3-button w3-hide-small w3-display-topright w3-padding-large w3-hover-white" title="Profile"><i class="fas fa-user-circle"></i>
-                    </a>
-
-                    <div class="w3-dropdown-content w3-card-4 w3-bar-block w3-display-topright" style="width:300px">
-                      <a href="#" class="w3-bar-item w3-button" id="username" disabled>Please log in.</a>
-                      <a href="https://covidsafetyapp.github.io/namepending/profile.html" class="w3-bar-item w3-button" style="visibility: hidden;" disabled>My Profile</a>
-                      <a href="https://covidsafetyapp.github.io/namepending/settings.html" class="w3-bar-item w3-button" style="visibility: hidden;" disabled>My Account</a>
-                      <a href="https://covidsafetyapp.github.io/namepending/login.html" class="fa fa-sign-out-alt w3-bar-item w3-button" id="signInOut"> Sign In </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <%- include('../partials/navbar') %>
 
         <!-- Navbar on small screens, currently doesn't show all the pages listed below -->
         <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
@@ -163,13 +133,7 @@
         <br>
 
         <!-- Footer -->
-        <footer class="w3-container w3-theme-d3 w3-padding-16">
-
-        </footer>
-
-        <footer class="w3-container w3-theme-d5">
-        <p>Created By Name Pending <a href="https://github.com/CSCI-3308-CU-Boulder/Name-Pending" target="_blank">Github</a></p>
-        </footer>
+        <%- include('../partials/footer') %>
 
 
         <!-- jQuery library -->
@@ -181,9 +145,9 @@
         <!-- JS CDN BOOTSTRAP-->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
         <!--Local JS-->
-        <script src="https://covidsafetyapp.github.io/namepending/login.js" > </script>
+        <script src="resources/js/login.js" > </script>
         <!--Sign Up JS-->
-        <script src="signup.js"></script>
+        <script src="resources/js/signup.js"></script>
 
     </body>
     </html>
