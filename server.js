@@ -33,13 +33,13 @@ app.get('/', function(req, res) {
 	var usernamesQuery = 'SELECT username FROM login_information;';
 	db.any(usernamesQuery)
 		.then(function(info) {
-			res.render('pages/login' {
+			res.render('pages/login', {
 				usernames: info
 			});
 		})
 		.catch(function (err) {
 			console.log('error', err);
-			res.render('pages/login' {
+			res.render('pages/login', {
 				usernames: ''
 			});
 		});
@@ -48,13 +48,13 @@ app.get('/login', function(req, res) {
 	var usernamesQuery = 'SELECT username FROM login_information;';
 	db.any(usernamesQuery)
 		.then(function(info) {
-			res.render('pages/login' {
+			res.render('pages/login', {
 				usernames: info
 			});
 		})
 		.catch(function (err) {
 			console.log('error', err);
-			res.render('pages/login' {
+			res.render('pages/login', {
 				usernames: ''
 			});
 		});
@@ -114,7 +114,7 @@ app.get('/search', function(req, res) {
       ]);
   })
   .then(info => {
-  	res.render('pages/search',{
+  	res.render('pages/search', {
 			locations: info[0],
 			searches: info[1],
 			faq: info[2] //actually currently used
