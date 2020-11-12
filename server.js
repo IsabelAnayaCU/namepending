@@ -14,7 +14,7 @@ app.use(express.static(__dirname + '/'));//This line is necessary for us to use 
 const dbConfig = {
 	host: 'localhost',
 	port: 5432,
-	database: 'covid_searches',
+	database: 'covid_app',
 	user: 'postgres',
 	password: 'gogo'
 };
@@ -24,16 +24,49 @@ var db = pgp(dbConfig);
 
 /********** PAGES **********/
 //TODO: change all images to /resources path
-//TODO: explore.js, login.js, signup.js
+//TODO: explore page and login
 //TODO: sign up modal, just in general
-//TODO: database connections and storing/retrieving data
+
 
 //login page
 app.get('/', function(req, res) {
-  res.render('pages/login');
+	var usernamesQuery = 'SELECT username FROM login_information;';
+	db.any(usernamesQuery)
+		.then(function(info) {
+			res.render('pages/login' {
+				usernames: info
+			});
+		})
+		.catch(function (err) {
+			console.log('error', err);
+			res.render('pages/login' {
+				usernames: ''
+			});
+		});
 });
 app.get('/login', function(req, res) {
-  res.render('pages/login');
+	var usernamesQuery = 'SELECT username FROM login_information;';
+	db.any(usernamesQuery)
+		.then(function(info) {
+			res.render('pages/login' {
+				usernames: info
+			});
+		})
+		.catch(function (err) {
+			console.log('error', err);
+			res.render('pages/login' {
+				usernames: ''
+			});
+		});
+});
+app.post('/login/signup', function(req, res) {
+	//var name
+	//var username
+	//var email
+	//var password
+	//var usertype
+	//var phone
+	//var insert = "INSERT INTO login_information(name, username, email, password, usertype, phonenumber) VALUES('" + name + "', '" + username + "', '" + email + "', '" + password + "', '" + usertype + "', '" + phonenumber + "');";
 });
 
 //home page
@@ -74,10 +107,10 @@ app.get('/search', function(req, res) {
   var faq = "SELECT question FROM faq ORDER BY count DESC LIMIT 10;";
 
   db.task('get-everything', task => {
-      return task.batch([
-          task.any(topLocations),
-          task.any(topSearch),
-          task.any(faq)
+    return task.batch([
+	      task.any(topLocations),
+	      task.any(topSearch),
+	      task.any(faq)
       ]);
   })
   .then(info => {
@@ -90,9 +123,9 @@ app.get('/search', function(req, res) {
   .catch(err => {
         console.log('error', err);
         res.render('pages/search', {
-            locations: info[0],
-            searches: info[1],
-            faq: info[2]
+            locations: '',
+            searches: '',
+            faq: ''
         });
     });
 });
