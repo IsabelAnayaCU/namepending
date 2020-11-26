@@ -60,13 +60,30 @@ app.get('/login', function(req, res) {
 		});
 });
 app.post('/login/signup', function(req, res) {
-	//var name
-	//var username
-	//var email
-	//var password
-	//var usertype
-	//var phone
-	//var insert = "INSERT INTO login_information(name, username, email, password, usertype, phonenumber) VALUES('" + name + "', '" + username + "', '" + email + "', '" + password + "', '" + usertype + "', '" + phonenumber + "');";
+	var name = req.body.name;
+	var username = req.body.username;
+	var email = req.body.email;
+	var password = req.body.password;
+	var usertype = "Student";
+	var phone = req.body.phone
+	var insertQuery = "INSERT INTO login_information(name, username, email, password, usertype, phonenumber) VALUES('" + name + "', '" + username + "', '" + email + "', '" + password + "', '" + usertype + "', '" + phonenumber + "');";
+	var usernamesQuery = 'SELECT username FROM login_information;';
+	db.task('get-everything', task => {
+		return task.batch([
+				task.any(insertQuery),
+				task.any(usernamesQuery)
+		]);
+	}).then(info => {
+		res.render('pages/login', {
+			usernames: info[0]
+		});
+	})
+	.catch(function (err) {
+		console.log('error', err);
+		res.render('pages/login', {
+			usernames: ''
+		});
+	});
 });
 
 //home page
